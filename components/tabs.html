@@ -20,7 +20,7 @@ title: Tabs
 
 	<pre><code class="javascript">var tags = riot.mount('rg-tabs', {
   tabs: {
-  type: 'primary|secondary|success|error',
+  type: 'default|brand|info|success|warning|error',
   tabs: [{
     heading: 'Tab one',
     text: 'This is tab one'
@@ -46,10 +46,11 @@ tags[0].on('open', function (tab) { console.log('open', tab) })
 <script>
 	var tags = riot.mount('rg-tabs', {
 		tabs: {
-			type: 'primary',
+			type: 'brand',
 			tabs: [{
 				heading: 'Tab one',
-				text: 'This is tab one'
+				text: 'This is tab one',
+				type: 'warning'
 			}, {
 				heading: 'Tab two',
 				text: 'This is tab two',
@@ -60,6 +61,7 @@ tags[0].on('open', function (tab) { console.log('open', tab) })
 				disabled: true
 			}, {
 				heading: 'Tab three',
+				type: 'success',
 				include: 'tab.html'
 			}]
 		}
