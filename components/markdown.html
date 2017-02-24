@@ -6,18 +6,14 @@ title: Markdown
 <div class="demo-container no-overflow">
 	<p>The following text was written in Markdown and converted using the component.</p>
 
-	<rg-markdown></rg-markdown>
+	<rg-markdown>
+		# Headings!
+		And regular *bold* text and so _much more_!
+	</rg-markdown>
 </div>
 
-<script src="commonmark.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.3.0/markdown-it.min.js"></script>
 <script>
-	var tags = riot.mount('rg-markdown', {
-		markdown: {
-			url: 'helptext.md'
-		}
-	})
-	tags[0].on('loaded', function () {
-		hljs.initHighlighting.called = false;
-		hljs.initHighlighting();
-	})
+	var tags = riot.mount('rg-markdown') ;
+	tags[0].on('loaded', alert('Your markdown text has been loaded!'))
 </script>
