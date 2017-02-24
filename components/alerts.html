@@ -16,10 +16,10 @@ title: Alerts
 
 <pre><code class="javascript">var tags = riot.mount('rg-alerts', {
   alerts: [{
-    type: 'primary',
+    type: 'brand',
     text: 'Look! Something you should know about.'
   }, {
-    type: 'secondary',
+    type: 'warning',
     text: 'Warning! You can\'t remove this alert.',
     dismissable: false
   }, {
@@ -39,10 +39,10 @@ tags[0].on('select', function (alert) { ... })
 <script>
   riot.mount('rg-alerts', {
     alerts: [{
-      type: 'primary',
+      type: 'brand',
       text: 'Look! Something you should know about.'
     }, {
-      type: 'secondary',
+      type: 'warning',
       text: 'Warning! You can\'t remove this alert.',
       dismissable: false
     }, {
