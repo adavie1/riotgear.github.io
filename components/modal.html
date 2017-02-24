@@ -25,10 +25,11 @@ title: Modal
     heading: 'Modal heading',
     buttons: [{
       text: 'Ok',
-      type: 'primary',
+      type: 'success',
       action: function () { ... }
     }, {
       text: 'Cancel',
+      type: 'warning',
       action: function () { ... }
     }]
   }
@@ -46,9 +47,10 @@ tags[0].on('close', function () { ... })</code></pre>
 			heading: 'Modal heading',
 			buttons: [{
 				text: 'Ok',
-				type: 'primary'
+				type: 'success'
 			}, {
-				text: 'Cancel'
+				text: 'Cancel',
+				type: 'warning'
 			}]
 		}
 	})
