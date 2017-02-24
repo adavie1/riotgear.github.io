@@ -1,11 +1,11 @@
 # Site settings
 permalink: pretty
-title: RiotGear - The open source component library for RiotJS
-description: The open source component library for RiotJS.
+title: RiotGear2 - The open source component library for RiotJS
+description: The NEW open source component library for RiotJS.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://riotgear.js.org" # the base hostname & protocol for your site
-twitter_username: riotcomponents
-version: '3.5.0'
+url: "http://riotgear2.github.io" # the base hostname & protocol for your site
+twitter_username: simplysuccess8
+version: '3.6.0'
 
 # Build settings
 markdown: kramdown
