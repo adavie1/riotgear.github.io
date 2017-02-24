@@ -24,16 +24,21 @@ title: Tags
     placeholder: 'Choose a country',
     filter: 'text', // <-- this enables filtering on the 'text' property
     options: [{
-      text: 'England'
+      text: 'England',
+      type: 'info'
     }, {
-      text: 'Scotland'
+      text: 'Scotland',
+      type: 'brand'
     }, {
-      text: 'Ireland'
+      text: 'Ireland',
+      type: 'warning'
     }, {
-      text: 'Wales'
+      text: 'Wales',
+      type: 'success'
     }],
     tags: [{
-      text: 'United States'
+      text: 'United States',
+          type: 'error'
     }]
   }
 })
@@ -49,17 +54,22 @@ tags[0].on('open', function () { ... })
 		tags: {
 			placeholder: 'Choose a country',
 			filter: 'text',
-			options: [{
-				text: 'Canada'
-			}, {
-				text: 'China'
-			}, {
-				text: 'United States'
-			}, {
-				text: 'United Kingdom'
-			}],
-			tags: [{
-				text: 'Japan'
+			    options: [{
+			      text: 'England',
+			      type: 'info'
+				    }, {
+			      text: 'Scotland',
+			      type: 'brand'
+				    }, {
+			      text: 'Ireland',
+			      type: 'warning'
+				    }, {
+			      text: 'Wales',
+			      type: 'success'
+			    }],
+		    tags: [{
+      			text: 'United States',
+		        type: 'error'
 			}]
 		}
 	})
