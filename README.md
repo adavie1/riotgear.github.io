@@ -1,7 +1,7 @@
 # RiotGear2
 
 ## This is a FORK of the Orginal RiotGear
-If you're looking for the orginal repo, which is Blaze CSS v1.0 compatible, head over to <a href="riotgear.js.org">here</a>.
+If you're looking for the orginal repo, which is Blaze CSS v1.0 compatible, head over to <a href="http://riotgear.js.org">here</a>.
 
 <img src="https://avatars0.githubusercontent.com/u/12480998?v=3&s=200" width="150px">
 
