@@ -4,7 +4,7 @@ title: Google Maps
 ---
 
 <div class="demo-container no-overflow">
-	<rg-map></rg-map>
+	<rg-map apikey="AIzaSyBKr4u-Jc62XttAAZT-wewCltAtPtEB3jA"></rg-map>
 
 	<h2>Use</h2>
 
@@ -20,7 +20,7 @@ title: Google Maps
 
 			<pre><code class="javascript">var tags = riot.mount('rg-map', {
   map: {
-    apiKey: [YOUR_API_KEY],
+    apikey: [YOUR_API_KEY],
     center: { lat: 37.7577, lng: -122.4376 },
     zoom: 8
   }
@@ -45,7 +45,6 @@ tags[0].on('loaded', function (map) { ... })</code></pre>
 <script>
 	var tags = riot.mount('rg-map', {
 		map: {
-			apiKey: "AIzaSyBKr4u-Jc62XttAAZT-wewCltAtPtEB3jA",
 			center: { lat: 37.7577, lng: -122.4376 },
 			zoom: 8
 		}
