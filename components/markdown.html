@@ -47,7 +47,8 @@ Enable typographer option to see result.
 <p><b>Breaking Change with 3.5.0!</b> We've swapped out commonmark.js for markdown-it.js.</p>
 <br />
 <div class="o-container o-container--medium">
-	<h3>Example Usage</h3>
+	<h2>Use</h2>
+	<h3>HTML</h3>
 	<b>&lt;rg-markdown&gt;</b><br/>
 		   ---<br/>
              __Advertisement :)__<br/>
@@ -84,11 +85,11 @@ Enable typographer option to see result.
 <br/>
            <b>&lt;/rg-markdown&gt;</b><br />
 	<br />
-	<h3>Script</h3>
-	<code>
-		var <i>tags</i> = <b>riot.mount</b>('rg-markdown') ;<br />
-		<i>tags</i>[0].<b>on</b>('loaded', <i>alert('Your markdown text has been loaded!'))</i><br />
-	</code>
+	<h3>JavaScript</h3>
+	<pre><code class="javascript">
+		var tags = riot.mount('rg-markdown') ;
+		tags[0].on('loaded', 'alert('Your markdown text has been loaded!'));
+	</code></pre>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.3.0/markdown-it.min.js"></script>
