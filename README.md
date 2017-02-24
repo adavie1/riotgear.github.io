@@ -1,4 +1,7 @@
-# RiotGear
+# RiotGear2
+
+## This is a FORK of the Orginal RiotGear
+If you're looking for the orginal repo, which is Blaze CSS v1.0 compatible, head over to <a href="riotgear.js.org">here</a>.
 
 <img src="https://avatars0.githubusercontent.com/u/12480998?v=3&s=200" width="150px">
 
@@ -24,11 +27,11 @@ If you have an idea for a new component or would like to make a suggestion about
 
 ### Find out more on the RiotGear website
 
-<a href="https://riotgear.js.org">https://riotgear.js.org</a>
+<a href="https://riotgear2.github.io">https://riotgear2.github.io</a>
 
 ### Suggestions
 
-If you'd like to suggest new components or enhancements to existing ones please <a href="https://github.com/RiotGear/rg/issues">raise an issue</a>.
+If you'd like to suggest new components or enhancements to existing ones please <a href="https://github.com/RiotGear2/rg/issues">raise an issue</a>.
 
 ### Contributing
 
@@ -36,7 +39,7 @@ First of all, Pull Requests, suggestions or comments about RiotGear are all welc
 
 #### Step 1
 
-If you haven't done so already please **<a href="https://github.com/RiotGear/rg/issues">raise an issue</a>**. Stating what you would like and how you think it should work.
+If you haven't done so already please **<a href="https://github.com/RiotGear2/rg/issues">raise an issue</a>**. Stating what you would like and how you think it should work.
 
 #### Step 2
 
