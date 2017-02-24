@@ -5,12 +5,13 @@ title: Include
 
 <div class="demo-container no-overflow">
 	<h2>Demo Page Loading...</h2>
-	<rg-include> url="https://riotgear2.github.io/components/include/demo_text.html"</rg-include>
+	<rg-include></rg-include>
 </div>
 
 <script>
 	var tags = riot.mount('rg-include', {
-		{unsafe: true}
+		url="https://riotgear2.github.io/components/include/demo_text.html",
+		unsafe: true
 		})
 
 	tags[0].on('loaded', alert("Your include file was loaded"))
