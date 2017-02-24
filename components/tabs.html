@@ -46,11 +46,10 @@ tags[0].on('open', function (tab) { console.log('open', tab) })
 <script>
 	var tags = riot.mount('rg-tabs', {
 		tabs: {
-			type: 'brand',
+			type: 'success',
 			tabs: [{
 				heading: 'Tab one',
-				text: 'This is tab one',
-				type: 'warning'
+				text: 'This is tab one'
 			}, {
 				heading: 'Tab two',
 				text: 'This is tab two',
@@ -61,7 +60,6 @@ tags[0].on('open', function (tab) { console.log('open', tab) })
 				disabled: true
 			}, {
 				heading: 'Tab three',
-				type: 'success',
 				include: 'tab.html'
 			}]
 		}
