@@ -9,7 +9,7 @@ If you're looking for the orginal repo, which is Blaze CSS v1.0 compatible, head
 <a href="https://www.npmjs.com/package/riotgear"><img src="https://img.shields.io/npm/dm/riotgear.svg?style=flat-square"></a>
 <a href="https://github.com/RiotGear/rg/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/riotgear.svg?style=flat-square"></a>
 
-The open source component library for <a href="https://muut.com/riotjs/">Riot</a>.
+The open source component library for <a href="https://riotjs.com">Riot</a>.
 
 ## Ready made components
 
