@@ -1,6 +1,6 @@
 # Site settings
 permalink: pretty
-title: RiotGear2 - The open source component library for RiotJS
+title: RiotGear2 - The NEW open source component library for RiotJS
 description: The NEW open source component library for RiotJS.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://riotgear2.github.io" # the base hostname & protocol for your site
