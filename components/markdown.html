@@ -48,8 +48,7 @@ Enable typographer option to see result.
 <br />
 <div class="o-container o-container--medium">
 	<h3>Example Usage</h3>
-	<code>
-	   &lt;rg-markdown&gt;<br/>
+	<b>&lt;rg-markdown&gt;</b><br/>
 		   ---<br/>
              __Advertisement :)__<br/>
 <br/>
@@ -83,7 +82,11 @@ Enable typographer option to see result.
 <br/>
 	(c) (C) (r) (R) (tm) (TM) (p) (P) +-<br/>
 <br/>
-           &lt;/rg-markdown&gt;<br/>
+           <b>&lt;/rg-markdown&gt;</b><br />
+	<br />
+	<code>
+	var tags = riot.mount('rg-markdown') ;
+	tags[0].on('loaded', alert('Your markdown text has been loaded!'))
 	</code>
 </div>
 
