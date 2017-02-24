@@ -4,19 +4,14 @@ title: Include
 ---
 
 <div class="demo-container no-overflow">
-	<h2>Loading Map Demo...</h2>
-	<rg-include> url="map.html"</rg-include>
+	<h2>Demo Page Loading...</h2>
+	<rg-include> url="http://riotgear2.github.io/include/demo_text.html"</rg-include>
 </div>
 
 <script>
 	var tags = riot.mount('rg-include', {
-		include: {
-			url: 'include/demo_text.html',
-			unsafe: true
-		}
-	})
-	tags[0].on('loaded', function () {
-		hljs.initHighlighting.called = false;
-		hljs.initHighlighting();
-	})
+		include: {unsafe: true}
+		})
+
+	tags[0].on('loaded', alert("Your include file was loaded"))
 </script>
