@@ -23,17 +23,17 @@ title: Toasts
   toasts: {
     position: 'bottomright|bottomleft|topleft|topright',
     toasts: [{
-      type: 'primary',
+      type: 'error',
       text: 'Made you look!',
       sticky: true // Turn off timeout
     }, {
-      type: 'secondary',
+      type: 'warning',
       text: 'Careful now...'
     }, {
       type: 'success',
       text: 'You did it!'
     }, {
-      type: 'error',
+      type: 'info',
       text: 'Oops!',
       timeout: 4000 // Default to 6000 if not set
     }]
@@ -50,17 +50,17 @@ tags[0].on('close', function (toast) { ... })
 		toasts: {
 			position: 'bottomright',
 			toasts: [{
-				type: 'primary',
+				type: 'error',
 				text: 'Made you look!',
 				sticky: true
 			}, {
-				type: 'secondary',
+				type: 'warning',
 				text: 'Careful now...'
 			}, {
 				type: 'success',
 				text: 'You did it!'
 			}, {
-				type: 'error',
+				type: 'info',
 				text: 'Oops!',
 				timeout: 4000
 			}]
