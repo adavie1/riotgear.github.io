@@ -21,7 +21,7 @@ title: Toggle
 
 	<pre><code class="javascript">var tags = riot.mount('rg-toggle', {
   toggle: {
-    type: 'primary|secondary|success|error',
+    type: 'default|brand|info|success|warning|error',
     checked: true
   }
 })
@@ -33,7 +33,7 @@ tags[0].on('toggle', function (checked) { ... })</code></pre>
 <script>
 	var tags = riot.mount('rg-toggle', {
 		toggle: {
-			type: 'primary',
+			type: 'success',
 			checked: true
 		}
 	})
