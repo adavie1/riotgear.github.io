@@ -20,13 +20,14 @@ title: Google Maps
 
 			<pre><code class="javascript">var tags = riot.mount('rg-map', {
   map: {
+    apiKey: [YOUR_API_KEY],
     center: { lat: 37.7577, lng: -122.4376 },
     zoom: 8
   }
 })
 
 tags[0].on('loaded', function (map) { ... })</code></pre>
-
+	<p><b>Note!</b> you now <i>must</i> pass an API key to access Google Maps API. More details <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.</p>
 	<p>Everything that is available via standard Google Maps options is available through this tag.</p>
 
 	<p>For information on what is available head over
@@ -44,6 +45,7 @@ tags[0].on('loaded', function (map) { ... })</code></pre>
 <script>
 	var tags = riot.mount('rg-map', {
 		map: {
+			apiKey: "AIzaSyBKr4u-Jc62XttAAZT-wewCltAtPtEB3jA",
 			center: { lat: 37.7577, lng: -122.4376 },
 			zoom: 8
 		}
@@ -53,7 +55,7 @@ tags[0].on('loaded', function (map) { ... })</code></pre>
 		var marker = new google.maps.Marker({
 			 position: { lat: 37.7577, lng: -122.4376 },
 			 map: map,
-			 title: 'Hello RiotGear!'
+			 title: 'Hello RiotGear2!'
 		 })
 	})
 </script>
