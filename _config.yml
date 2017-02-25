@@ -17,6 +17,9 @@ navigation-getting-started:
 
 
 navigation-community:
+- text: Our Team Code
+  url: /community/code/
+
 - text: Contributing
   url: /community/contributing/
 
