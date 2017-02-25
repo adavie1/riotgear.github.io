@@ -4,7 +4,7 @@ title: Charts
 ---
 
 <div class="demo-container no-overflow">
-	<rg-chart class="linechart"></rg-chart>
+	<rg-chart class="barchart"></rg-chart>
 	<rg-chart class="ringchart"></rg-chart>
 
 	<h2>Use</h2>
@@ -65,7 +65,7 @@ tags[0].on('loaded', function (chart) { ... })</code></pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 <script>
-        var tags = riot.mount('rg-chart', {
+        var tags = riot.mount('.ringchart', {
             chart: {
                 type: 'doughnut', // line|bar|radar|polar|pie|doughnut
                 data: {
@@ -92,7 +92,7 @@ tags[0].on('loaded', function (chart) { ... })</code></pre>
             }
         });
 
-   tags = riot.mount('rg-chart',  {
+   tags = riot.mount('.barchart',  {
             chart: {
                 type: 'bar', // line|bar|radar|polar|pie|doughnut
                 data: {
