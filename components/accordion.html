@@ -25,9 +25,56 @@ title: Accordion
 		JavaScript
 	</h3>
 
-<pre><code class="javascript">var tags = riot.mount('rg-accordion');</code></pre>
+<pre><code class="javascript">
+var tags = riot.mount('rg-accordion', {
+             accordion: {
+               panels: [
+                      {
+                      title: 'Heading 1',
+                      content: 'Content 1'
+                      },
+                      {
+                      title: 'Heading 2',
+                      content: 'Content 2'
+                      },
+                      {
+                      title: 'Heading 3',
+                      content: 'Content 3'
+                      },
+                    ]
+             }
 
+        });
+
+       tags[0].on('notify', function(e) {
+           console.log("notify: ", e)
+        })
+	</code></pre>
+	<b>Hint!</b> Check the browser console for notifications.
 </div>
 <script>
-	riot.mount('rg-accordion') ;
+	var tags = riot.mount('rg-accordion', {
+             accordion: {
+               panels: [
+                      {
+                      title: 'Heading 1',
+                      content: 'Content 1'
+                      },
+                      {
+                      title: 'Heading 2',
+                      content: 'Content 2'
+                      },
+                      {
+                      title: 'Heading 3',
+                      content: 'Content 3'
+                      },
+                    ]
+             }
+
+        }) ;
+	
+	tags[0].on('notify', function(e) {
+            console.log("notify: ", e)
+        })
+
 </script>
