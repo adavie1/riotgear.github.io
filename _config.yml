@@ -25,6 +25,9 @@ navigation-community:
 
 
 navigation-components:
+- text: Accordion
+  url: /components/accordion/
+
 - text: Alerts
   url: /components/alerts/
 
