@@ -25,6 +25,6 @@
 	{% if page.url == link.url %}
 	{% assign active = 'active' %}
 	{% endif %}
-	<li class="{{ active }}"><a href="{{ link.url }}">{{ link.text }}</a></li>
+	<li class="{{ active }} {{link.class-name}}"><a href="{{ link.url }}">{{ link.text }}</a></li>
 	{% endfor %}
 </ul>
