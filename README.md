@@ -3,7 +3,7 @@
 ## This is a FORK of the Orginal RiotGear
 If you're looking for the orginal repo, which is Blaze CSS v1.0 compatible, head over to <a href="http://riotgear.js.org">here</a>.
 
-<img src="https://avatars0.githubusercontent.com/u/12480998?v=3&s=200" width="150px">
+<img src="https://riotgear2.github.io/images/logobig.png" width="150px">
 
 <a href="https://www.npmjs.com/package/riotgear"><img src="https://img.shields.io/npm/v/riotgear.svg?style=flat-square"></a>
 <a href="https://www.npmjs.com/package/riotgear"><img src="https://img.shields.io/npm/dm/riotgear.svg?style=flat-square"></a>
