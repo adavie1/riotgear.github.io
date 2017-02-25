@@ -30,7 +30,7 @@ navigation-community:
 navigation-components:
 - text: Accordion
   url: /components/accordion/
-  nav-class: newcomp
+  class-name: newcomp
 
 - text: Alerts
   url: /components/alerts/
