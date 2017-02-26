@@ -1,0 +1,57 @@
+---
+layout: page
+title: Avatars
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6.0!</strong> The <a href="http://blazecss.com/components/avatars/">avatars</a> feature from Blaze CSS is in beta!
+     </div>
+
+  
+  <p>
+  <rg-avatar size="xsmall"></rg-avatar>
+  <rg-avatar size="small"></rg-avatar>
+  <rg-avatar size="medium"></rg-avatar>
+  <rg-avatar></rg-avatar>
+  <rg-avatar size="large"></rg-avatar>
+  <rg-avatar size="xlarge"></rg-avatar>
+  <rg-avatar text="RG2" size="super"></rg-avatar>
+	</p>
+
+	<h2>Use</h2>
+           <ul>
+		   <li>You can set values for the avatar inline, or via the opts (this is true for most RG2 components)</li>
+		   <li>On Click is emitted</li>
+		   <li>Optional second image</li>
+	   </ul>
+	<h3>
+		HTML
+	</h3>
+
+	<pre><code class="html">&lt;rg-avatar text="YOU" size="xsmall|small|medium|large|xlarge|super" image='[URL]' image2='[URL]'>&lt;/rg-avatar></code></pre>
+
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">var tags = riot.mount('rg-avatar', {
+          avatar: {
+                  image: "https://unsplash.it/200?image=1011",    // will apply to all instances, onless you specify otherwise
+                  image2: "https://unsplash.it/200?random"        // ditto
+                  }
+        });</code></pre>
+
+</div>
+<script>
+  var tags = riot.mount('rg-avatar', {
+          avatar: {
+                  image: "https://unsplash.it/200?image=1011",
+                  image2: "https://unsplash.it/200?random"
+                  }
+        });
+
+       tags[0].on("clicked", function(av){
+       console.log("Avatar clicked: ", av);
+     }) ;
+</script>
