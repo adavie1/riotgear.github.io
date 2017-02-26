@@ -39,6 +39,14 @@ navigation-components:
 - text: Alerts
   url: /components/alerts/
 
+- text: Avatars
+  url: /components/avatar/
+  class-name: newcomp
+
+- text: Badges
+  url: /components/badge/
+  class-name: newcomp
+
 - text: Bubble
   url: /components/bubble/
 
