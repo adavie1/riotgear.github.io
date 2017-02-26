@@ -370,7 +370,7 @@ main {
 	float: right;
 }
 
-main .newlabel:after
+span .newlabel:after
     {
     content: "new";
     border-radius: 5px;
