@@ -32,6 +32,10 @@ navigation-components:
   url: /components/accordion/
   class-name: newcomp
 
+- text: Address
+  url: /components/address/
+  class-name: newcomp
+
 - text: Alerts
   url: /components/alerts/
 
