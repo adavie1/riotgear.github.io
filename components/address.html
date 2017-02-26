@@ -5,7 +5,7 @@ title: Address
 <div class="demo-container">
   
        <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
-         <strong>New in v3.6.0!</strong> The <a href="http://blazecss.com/components/addresses/">addresses</a> feature from Blaze CSS is on it's way!
+         <strong>New in v3.6.0!</strong> The <a href="http://blazecss.com/components/addresses/">addresses</a> feature from Blaze CSS is early beta!
      </div>
 
   
@@ -14,7 +14,11 @@ title: Address
 	</p>
 
 	<h2>Use</h2>
-
+           <ul>
+		   <li>The recipient field is the owner, person or company</li>
+		   <li>The settings for road, district, town, state, code, country attach a class of 'c-address--{marker}' to each line.</li>
+		   <li>The <b>map</b> functions will be in the next release of the address.</li>
+	   </ul>
 	<h3>
 		HTML
 	</h3>
@@ -25,9 +29,37 @@ title: Address
 		JavaScript
 	</h3>
 
-<pre><code class="javascript">var tags = riot.mount('rg-address');</code></pre>
+<pre><code class="javascript">var tags = riot.mount('rg-address', {
+          address: {
+            recipient: "The Simpsons",
+            lines: [
+                   {line: "742 Evergreen Terrace", road: true},
+                   {line: "Lone Pine Estate", district: true},
+                   {line: "Springfield", town: true},
+                   {line: "IL.", state: true},
+                   {line: "80085", code: true},
+                   {line: "USA", country: true}
+            ],
+          showmap: true,
+          maplocation: "left|top|bottom|right"
+          }
+        });</code></pre>
 
 </div>
 <script>
-	riot.mount('rg-address') ;
+	riot.mount('rg-address', {
+          address: {
+            recipient: "The Simpsons",
+            lines: [
+                   {line: "742 Evergreen Terrace", road: true},
+                   {line: "Lone Pine Estate", district: true},
+                   {line: "Springfield", town: true},
+                   {line: "IL.", state: true},
+                   {line: "80085", code: true},
+                   {line: "USA", country: true}
+            ],
+          showmap: true,
+          maplocation: "left|top|bottom|right"
+          }
+        }) ;
 </script>
