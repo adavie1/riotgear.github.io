@@ -29,13 +29,15 @@ title: Avatars
 		HTML
 	</h3>
 
-	<pre><code class="html">&lt;rg-avatar text="YOU" size="xsmall|small|medium|large|xlarge|super" image='[URL]' image2='[URL]'>&lt;/rg-avatar></code></pre>
-
+	<pre><code class="html">
+	&lt;rg-avatar text="YOU" size="xsmall|small|medium|large|xlarge|super" image='[URL]' image2='[URL]'&gt;&lt;/rg-avatar&gt;
+	</code></pre>
 	<h3>
 		JavaScript
 	</h3>
 
-<pre><code class="javascript">var tags = riot.mount('rg-avatar', {
+<pre><code class="javascript">
+     var tags = riot.mount('rg-avatar', {
           avatar: {
                   image: "https://unsplash.it/200?image=1011",    // will apply to all instances, onless you specify otherwise
                   image2: "https://unsplash.it/200?random"        // ditto
