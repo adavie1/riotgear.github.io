@@ -56,6 +56,10 @@ navigation-components:
 - text: Code
   url: /components/code/
 
+- text: Confetti
+  url: /components/confetti/
+  class-name: newcomp
+
 - text: Credit Card
   url: /components/creditcard/
 
