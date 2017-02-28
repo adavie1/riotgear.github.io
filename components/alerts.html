@@ -7,7 +7,7 @@ title: Alerts
 	<rg-alerts></rg-alerts>
 
 	<h2>Use</h2>
-
+	<p class="newlabel">You can now use markdown in the text of your alerts!</p>
 	<h3>HTML</h3>
 
 	<pre><code class="html">&lt;rg-alerts>&lt;/rg-alerts></code></pre>
@@ -17,14 +17,14 @@ title: Alerts
 <pre><code class="javascript">var tags = riot.mount('rg-alerts', {
   alerts: [{
     type: 'brand',
-    text: 'Look! Something you should know about.'
+    text: 'Look! Something _you_ should know about.'
   }, {
     type: 'warning',
-    text: 'Warning! You can\'t remove this alert.',
+    text: 'Warning! You can\'t **remove** this alert.',
     dismissable: false
   }, {
     type: 'success',
-    text: 'Success! Well done. This alert will disappear in 10 seconds',
+    text: 'Success! Well done. This alert will disappear in **10 seconds**',
     timeout: 10000
   }, {
     type: 'error',
@@ -40,18 +40,18 @@ tags[0].on('select', function (alert) { ... })
   riot.mount('rg-alerts', {
     alerts: [{
       type: 'brand',
-      text: 'Look! Something you should know about.'
+      text: 'Look! Something _you_ should know about.'
     }, {
       type: 'warning',
-      text: 'Warning! You can\'t remove this alert.',
+      text: 'Warning! You can\'t **remove** this alert.',
       dismissable: false
     }, {
       type: 'success',
-      text: 'Success! Well done. This alert will disappear in 10 seconds',
+      text: 'Success! Well done. This alert will disappear in **10 seconds**',
       timeout: 10000
     }, {
       type: 'error',
-      text: 'Error! Something bad happened. ',
+      text: 'Error! Something **bad** happened. ',
       dismissable: true
     }]
   })
