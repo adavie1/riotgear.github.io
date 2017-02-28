@@ -1,0 +1,45 @@
+---
+layout: page
+title: Confetti
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid goldenrod;padding: 20px;">
+         <strong>New in v3.6.0!</strong> Confetti Partyis early beta!
+     </div>
+
+  
+  <p>
+		<rg-address></rg-address>
+	</p>
+
+	<h2>Use</h2>
+       <ul>
+		   <li>Displays a fun rain of confetti over the whole browser window</li>
+		   <li>Clicking on the confetti stops it</li>
+		   <li>Emits on clicked event</li>
+       <li><i>Depends on</i> the external file <b>rg-confetti.js</b>, which will be loaded from the URL given in the opts</li>
+	     </ul>
+       <rg-alert type="warning" text="**Known Issue** Chrome Browser (on Linux at least, doesn't work), Firefox does, others are untested. If you want to test and report issues, [please do](https://github.com/riotgear2/riotgear2.github.io/issues)!"></rg-alert>
+     
+	<h3>
+		HTML
+	</h3>
+
+	<pre><code class="html">
+  &lt;rg-confetti&gt;&lt;/rg-confetti&gt;
+  </code></pre>
+
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+riot.mount('rg-confetti', {confetti : {url: "/rg-confetti.js"}});
+</code></pre>
+
+</div>
+<script>
+	riot.mount('rg-confetti') ;
+  riot.mount('rg-alert') ;
+</script>
