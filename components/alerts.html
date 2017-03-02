@@ -4,18 +4,25 @@ title: Alerts
 ---
 
 <div class="demo-container no-overflow">
+         <rg-alert type="success" dismissable=false timeout=3>Standalone **test alert** _(times out in **3** secs)_</rg-alert>
+         <br />
 	<rg-alerts></rg-alerts>
 
 	<h2>Use</h2>
 	<p class="newlabel">You can now use markdown in the text of your alerts!</p>
 	<h3>HTML</h3>
 
-	<pre><code class="html">&lt;rg-alerts>&lt;/rg-alerts></code></pre>
+	<pre><code class="html">
+	&lt;rg-alert type="success" dismissable=false timeout=3&gt;Standalone **test alert** _(times out in **3** secs)_&lt;/rg-alert&gt;
+	&lt;br /&gt;
+	&lt;rg-alerts>&lt;/rg-alerts></code></pre>
 
 	<h3>JavaScript</h3>
 
 <pre><code class="javascript">
  RiotGearInit() ;   // If you're using markdown text.
+
+riot.mount("rg-alert") ;
 
 var tags = riot.mount('rg-alerts', {
   alerts: [{
@@ -28,7 +35,7 @@ var tags = riot.mount('rg-alerts', {
   }, {
     type: 'success',
     text: 'Success! Well done. This alert will disappear in **10 seconds**',
-    timeout: 10000
+    timeout: 10000   // values can either be in secs or milisecs. Will adjust accordingly. Anythng over 50K milis gets set to 5 secs.
   }, {
     type: 'error',
     text: 'Error! Something bad happened. ',
@@ -41,6 +48,8 @@ tags[0].on('select', function (alert) { ... })
 </div>
 <script>
   RiotGearInit() ;
+
+  riot.mount("rg-alert") ;
 
   riot.mount('rg-alerts', {
     alerts: [{
