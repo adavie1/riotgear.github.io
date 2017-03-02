@@ -14,7 +14,10 @@ title: Alerts
 
 	<h3>JavaScript</h3>
 
-<pre><code class="javascript">var tags = riot.mount('rg-alerts', {
+<pre><code class="javascript">
+ RiotGearInit() ;   // If you're using markdown text.
+
+var tags = riot.mount('rg-alerts', {
   alerts: [{
     type: 'brand',
     text: 'Look! Something _you_ should know about.'
@@ -37,6 +40,8 @@ tags[0].on('select', function (alert) { ... })
          .on('dismiss', function (alert) { ... })</code></pre>
 </div>
 <script>
+  RiotGearInit() ;
+
   riot.mount('rg-alerts', {
     alerts: [{
       type: 'brand',
