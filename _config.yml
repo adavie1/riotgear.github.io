@@ -48,7 +48,7 @@ navigation-components:
   class-name: newcomp
 
 - text: Breadcrumbs
-  url: /components/breadcrumb/
+  url: /components/breadcrumbs/
   class-name: newcomp
 
 - text: Bubble
