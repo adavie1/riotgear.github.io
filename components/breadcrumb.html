@@ -1,1 +1,43 @@
+---
+layout: page
+title: Breadcrumb
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6.0!</strong> The Blaze CSS 2 <a href="http://blazecss.com/components/breadcrumbs/" target="_blank">breadcrumb</a> so you can create navigation and routes
+       </div>
 
+  
+  <p>
+  <rg-breadcrumb>
+  </rg-breadcrumb>
+	</p>
+
+	<h2>Use</h2>
+           <ul>
+		   <li>Useful if you want HTML text in your tags.</li>
+		   <li>Actually this tag came about because of a need to "embed" HTML into the alerts</li>
+	   </ul>
+	<h3>
+		HTML
+	</h3>
+
+	<pre><code class="html">
+	&lt;rg-breadcrumb&gt;&lt;/rg-breadcrumb&gt;
+	</code></pre>
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+     var tags = riot.mount('rg-breadcrumb', {
+          breadcrumb: {
+                  ...
+                  }
+        });</code></pre>
+
+</div>
+<script>
+  var tags = riot.mount('rg-breadcrumb'});
+</script>
