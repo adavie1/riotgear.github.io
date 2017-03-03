@@ -5,39 +5,90 @@ title: Breadcrumb
 <div class="demo-container">
   
        <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
-         <strong>New in v3.6.0!</strong> The Blaze CSS 2 <a href="http://blazecss.com/components/breadcrumbs/" target="_blank">breadcrumb</a> so you can create navigation and routes
+         <strong>New in v3.6.0!</strong> The Blaze CSS 2 <a href="http://blazecss.com/components/breadcrumbs/" target="_blank">breadcrumbs</a> so you can create navigation and routes
        </div>
 
-  
-  <p>
-  <rg-breadcrumb>
-  </rg-breadcrumb>
-	</p>
-
 	<h2>Use</h2>
+        <hr>
+	  <rg-breadcrumbs></rg-breadcrumbs>
+	  <hr>
            <ul>
-		   <li>Useful if you want HTML text in your tags.</li>
-		   <li>Actually this tag came about because of a need to "embed" HTML into the alerts</li>
+		   <li>You can use them with or without HREF URLs</li>
+		   <li><em>Optionally</em> you can have a <a href="">badge</a> with all it's features</li>
+		   <li><b>Events</b> sends a <code>link-clicked</code> event with details of the link clicked.</li>
 	   </ul>
 	<h3>
 		HTML
 	</h3>
 
 	<pre><code class="html">
-	&lt;rg-breadcrumb&gt;&lt;/rg-breadcrumb&gt;
+	&lt;rg-breadcrumbs&gt;&lt;/rg-breadcrumbs&gt;
 	</code></pre>
 	<h3>
 		JavaScript
 	</h3>
 
 <pre><code class="javascript">
-     var tags = riot.mount('rg-breadcrumb', {
-          breadcrumb: {
-                  ...
-                  }
-        });</code></pre>
+    var tags = riot.mount ("rg-breadcrumbs", {
+        breadcrumbs: {
+            links: [
+                 {
+                 text: "Home Planet",
+                 url: "http://riotgear2.github.io"
+                 },
+                 {
+                 text: "Mercury"
+                 },
+                 {
+                 text: "Venus",
+                 badge: {
+                   text: "42",
+                   type: "warning",
+                   ghost: true
+                 }
+                 },
+                 {
+                 text: "Third Rock",
+                 istext: true
+                 }
+            ]
+        }
+    }) ;
+
+    tags[0].on("link-clicked", function(e){
+      console.log("link-clicked: ", e)
+    }) ;
+ </code></pre>
 
 </div>
 <script>
-  var tags = riot.mount('rg-breadcrumb'});
+    var tags = riot.mount ("rg-breadcrumbs", {
+        breadcrumbs: {
+            links: [
+                 {
+                 text: "Home Planet",
+                 url: "http://riotgear2.github.io"
+                 },
+                 {
+                 text: "Mercury"
+                 },
+                 {
+                 text: "Venus",
+                 badge: {
+                   text: "42",
+                   type: "warning",
+                   ghost: true
+                 }
+                 },
+                 {
+                 text: "Third Rock",
+                 istext: true
+                 }
+            ]
+        }
+    }) ;
+
+    tags[0].on("link-clicked", function(e){
+      console.log("link-clicked: ", e)
+    }) ;
 </script>
