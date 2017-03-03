@@ -1,0 +1,47 @@
+---
+layout: page
+title: HTML
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6.0!</strong> Easily add HTML content to the contents of your tag. We've used it to inject markdown content into tags
+     </div>
+
+  
+  <p>
+  <rg-html>
+  <h1>Random Heading</h1>
+  <p>The road to <em>Amber</em> grew dim, as the trees closed in, Corwin startled as <strong>unicorn</strong> across the road...
+  <br />Things were clearly going to seed to see them this close to the castle.
+  </rg-html>
+	</p>
+
+	<h2>Use</h2>
+           <ul>
+		   <li>Useful if you want HTML text in your tags.</li>
+		   <li>Actually this tag came about because of a need to "embed" HTML into the alerts</li>
+		   <li><b>Risk!</b> This is intended to be used with care, ideally for read only material, since of you allow the user access to the contents, it opens the door for scripting attacks on your site.</li>
+	   </ul>
+	<h3>
+		HTML
+	</h3>
+
+	<pre><code class="html">
+	&lt;rg-html [content='HTML content']&gt;[HTML content can also appear here]&lt;/rg-html&gt;
+	</code></pre>
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+     var tags = riot.mount('rg-html', {
+          html: {
+                  content: "Your HTML text"
+                  }
+        });</code></pre>
+
+</div>
+<script>
+  var tags = riot.mount('rg-html'});
+</script>
