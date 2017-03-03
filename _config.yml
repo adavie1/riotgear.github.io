@@ -47,6 +47,10 @@ navigation-components:
   url: /components/badge/
   class-name: newcomp
 
+- text: Breadcrumbs
+  url: /components/breadcrumb/
+  class-name: newcomp
+
 - text: Bubble
   url: /components/bubble/
 
@@ -71,6 +75,10 @@ navigation-components:
 
 - text: Google Analytics
   url: /components/ga/
+
+- text: HTML
+  url: /components/html/
+  class-name: newcomp
 
 - text: Iframify
   url: /components/iframify/
