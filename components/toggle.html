@@ -9,7 +9,7 @@ title: Toggle
 	<h2>Use</h2>
 	<hr>
 	<br />
-	<rg-toggle text="Now also supports text!"></rg-toggle>
+	<rg-toggle text="Now also **supports** text!"></rg-toggle>
 	<br />
 	<hr>
 
@@ -17,15 +17,18 @@ title: Toggle
 		HTML
 	</h3>
 
-	<pre><code class="html">&lt;rg-toggle text="Now also supports text!">&lt;/rg-toggle></code></pre>
+	<pre><code class="html">
+	&lt;rg-toggle text="Now also **supports** text!">&lt;/rg-toggle&gt;
+	</code></pre>
 
 	<h3>
 		JavaScript
 	</h3>
 
-	<pre><code class="javascript">var tags = riot.mount('rg-toggle', {
+	<pre><code class="javascript">
+var tags = riot.mount('rg-toggle', {
   toggle: {
-    type: 'default|brand|info|success|warning|error',
+    style: 'default|brand|info|success|warning|error',
     checked: true
   }
 })
@@ -37,7 +40,7 @@ tags[0].on('toggle', function (checked) { ... })</code></pre>
 <script>
 	var tags = riot.mount('rg-toggle', {
 		toggle: {
-			type: 'success',
+			style: 'success',
 			checked: true
 		}
 	})
