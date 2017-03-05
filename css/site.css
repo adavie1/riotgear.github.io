@@ -361,6 +361,24 @@ nav .newcomp:after
     margin-bottom: -0.2em;
     }
 
+
+nav .betacomp:after
+    {
+    content: "beta";
+    border-radius: 5px;
+    color: ivory;
+    background-color: goldenrod;
+    font-family: arial;
+    font-size: 0.7em;
+    position:absolute;
+    padding:0.3em;
+    margin-left: 0.8em;
+    margin-top: -0.2em;
+    margin-bottom: -0.2em;
+    }
+
+
+
 /*
  * Main
  */
