@@ -54,6 +54,10 @@ navigation-components:
 - text: Bubble
   url: /components/bubble/
 
+- text: Buttons
+  url: /components/buttons/
+  class-name: newcomp
+
 - text: Charts
   url: /components/charts/
 
