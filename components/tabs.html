@@ -16,32 +16,36 @@ title: Tabs
 		HTML
 	</h3>
 
-	<pre><code class="html">&lt;rg-tabs>&lt;/rg-tabs></code></pre>
+	<pre><code class="html">
+	&lt;rg-tabs>&lt;/rg-tabs&gt;
+	</code></pre>
 
 	<h3>
 		JavaScript
 	</h3>
 
-	<pre><code class="javascript">var tags = riot.mount('rg-tabs', {
-  tabs: {
-  type: 'default|brand|info|success|warning|error',
-  tabs: [{
-    heading: 'Tab one',
-    text: 'This is tab one'
-  }, {
-    heading: 'Tab two',
-    text: 'This is tab two',
-    active: true
-  }, {
-    heading: 'Disabled tab',
-    text: 'This is disabled tab',
-    disabled: true
-  }, {
-    heading: 'Tab three',
-    include: 'tab.html'
-  }]
-  }
-})
+	<pre><code class="javascript">
+	var tags = riot.mount('rg-tabs', {
+	  tabs: {
+	  style: 'default|brand|info|success|warning|error',
+	  tabs: [{
+	    heading: 'Tab one',
+	    text: 'This is tab one'
+	  }, {
+	    heading: 'Tab two',
+	    text: 'This is tab two',
+	    active: true
+	  }, {
+	    heading: 'Disabled tab',
+	    text: 'This is disabled tab',
+	    disabled: true
+	  }, {
+	    heading: 'Tab three',
+	    include: 'tab.html'
+	  }]
+  	}
+	})
+	
 tags[0].on('open', function (tab) { console.log('open', tab) })
        .on('loading', function (tab) { console.log('loading', tab) })
        .on('loaded', function (tab) { console.log('loaded', tab) })</code></pre>
@@ -50,7 +54,7 @@ tags[0].on('open', function (tab) { console.log('open', tab) })
 <script>
 	var tags = riot.mount('rg-tabs', {
 		tabs: {
-			type: 'success',
+			style: 'success',
 			tabs: [{
 				heading: 'Tab one',
 				text: 'This is tab one'
