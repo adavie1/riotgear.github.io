@@ -16,39 +16,43 @@ title: Tags
 		HTML
 	</h3>
 
-	<pre><code class="html">&lt;rg-tags>&lt;/rg-tags></code></pre>
+	<pre><code class="html">
+	&lt;rg-tags>&lt;/rg-tags&gt;
+	</code></pre>
 
 	<h3>
 		JavaScript
 	</h3>
 
-	<pre><code class="javascript">var tags = riot.mount('rg-tags', {
+	<pre><code class="javascript">
+var tags = riot.mount('rg-tags', {
   tags: {
     placeholder: 'Choose a country',
     filter: 'text', // <-- this enables filtering on the 'text' property
     options: [{
       text: 'England',
-      type: 'info'
+      style: 'info'
     }, {
       text: 'Scotland',
-      type: 'brand'
+      style: 'brand'
     }, {
       text: 'Ireland',
-      type: 'warning'
+      style: 'warning'
     }, {
       text: 'Wales',
-      type: 'success'
+      style: 'success'
     }],
     tags: [{
       text: 'United States',
-          type: 'error'
+          style: 'error'
     }]
   }
 })
 
 tags[0].on('open', function () { ... })
        .on('close', function () { ... })
-       .on('select', function (item) { ... })</code></pre>
+       .on('select', function (item) { ... })
+</code></pre>
 
 </div>
 
@@ -59,20 +63,20 @@ tags[0].on('open', function () { ... })
 			filter: 'text',
 			    options: [{
 			      text: 'England',
-			      type: 'info'
+			      style: 'info'
 				    }, {
 			      text: 'Scotland',
-			      type: 'brand'
+			      style: 'brand'
 				    }, {
 			      text: 'Ireland',
-			      type: 'warning'
+			      style: 'warning'
 				    }, {
 			      text: 'Wales',
-			      type: 'success'
+			      style: 'success'
 			    }],
 		    tags: [{
       			text: 'United States',
-		        type: 'error'
+		        style: 'error'
 			}]
 		}
 	})
