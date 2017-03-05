@@ -62,7 +62,7 @@ navigation-components:
 
 - text: Confetti
   url: /components/confetti/
-  class-name: newcomp
+  class-name: betacomp
 
 - text: Credit Card
   url: /components/creditcard/
