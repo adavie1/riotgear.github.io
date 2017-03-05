@@ -6,6 +6,7 @@ title: Google Maps
 <div class="demo-container no-overflow">
 
 	<h2>Use</h2>
+	<p><b>Note!</b> you now <i>must</i> pass an API key to access Google Maps API. More details <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.</p>
 	<hr>
 	<rg-map apikey="AIzaSyBKr4u-Jc62XttAAZT-wewCltAtPtEB3jA"></rg-map>
 	<hr>
@@ -20,7 +21,8 @@ title: Google Maps
 		JavaScript
 	</h3>
 
-			<pre><code class="javascript">var tags = riot.mount('rg-map', {
+<pre><code class="javascript">
+var tags = riot.mount('rg-map', {
   map: {
     apikey: [YOUR_API_KEY],
     center: { lat: 37.7577, lng: -122.4376 },
@@ -28,8 +30,9 @@ title: Google Maps
   }
 })
 
-tags[0].on('loaded', function (map) { ... })</code></pre>
-	<p><b>Note!</b> you now <i>must</i> pass an API key to access Google Maps API. More details <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.</p>
+tags[0].on('loaded', function (map) { ... })
+
+</code></pre>
 	<p>Everything that is available via standard Google Maps options is available through this tag.</p>
 
 	<p>For information on what is available head over
