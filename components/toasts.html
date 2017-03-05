@@ -14,27 +14,30 @@ title: Toasts
 		HTML
 	</h3>
 
-	<pre><code class="html">&lt;rg-toasts>&lt;/rg-toasts></code></pre>
+	<pre><code class="html">
+	&lt;rg-toasts>&lt;/rg-toasts&gt;
+	</code></pre>
 
 	<h3>
 		JavaScript
 	</h3>
 
-	<pre><code class="javascript">var tags = riot.mount('rg-toasts', {
+<pre><code class="javascript">
+var tags = riot.mount('rg-toasts', {
   toasts: {
     position: 'bottomright|bottomleft|topleft|topright',
     toasts: [{
-      type: 'error',
+      style: 'error',
       text: 'Made you look!',
       sticky: true // Turn off timeout
     }, {
-      type: 'warning',
+      style: 'warning',
       text: 'Careful now...'
     }, {
-      type: 'success',
+      style: 'success',
       text: 'You did it!'
     }, {
-      type: 'info',
+      style: 'info',
       text: 'Oops!',
       timeout: 4000 // Default to 6000 if not set
     }]
@@ -51,17 +54,17 @@ tags[0].on('close', function (toast) { ... })
 		toasts: {
 			position: 'topright',
 			toasts: [{
-				type: 'error',
+				style: 'error',
 				text: 'Made you look!',
 				sticky: true
 			}, {
-				type: 'warning',
+				style: 'warning',
 				text: 'Careful now...'
 			}, {
-				type: 'success',
+				style: 'success',
 				text: 'You did it!'
 			}, {
-				type: 'info',
+				style: 'info',
 				text: 'Oops!',
 				timeout: 4000
 			}]
