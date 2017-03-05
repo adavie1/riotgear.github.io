@@ -409,6 +409,12 @@ document.addEventListener("DOMContentLoaded", function() {
         this.update = function() {
             var i = 0;
             context.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (RG2_CONFETTI_MSG) {
+               context.fillStyle = "indianred";
+               context.font = "16px Arial";
+               context.fillText(RG2_CONFETTI_MSG, canvas.width/2.5, canvas.height/2);            }
+
             for (i = 0; i < confettiPaperCount; i++) {
                 confettiPapers[i].Update(duration);
                 confettiPapers[i].Draw(context);
@@ -425,9 +431,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-      var confetti = new confetti.Context('rg-confetti');
+      var confetti = new confetti.Context((RG2_CONFETTI ? RG2_CONFETTI : 'rg-confetti'));
       confetti.start();
       window.addEventListener('resize', function(event){
         confetti.resize();
+
       });
 });
