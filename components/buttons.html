@@ -1,0 +1,94 @@
+---
+layout: page
+title: Buttons
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6.0!</strong> The <a href="http://blazecss.com/components/buttons/">buttons</a> from Blaze 2 CSS!
+     </div>
+  
+	<h2>Use</h2>
+     <h3>Button Attributes</h3>
+   These can either be pased directly to the tag, or via the <code>opts</code> argument during mount. If provided to the tag, they <i>override</i> the <code>opts</code> arguments.
+   <hr>
+   <p><b>styles</b>: &lt;empty&gt;| info | brand | warning | error | success</p>
+   <p><b>sizes</b>: xsmall| small | medium | large | xlarge | super</p>
+   <p><b>ghost</b> attribute: yes| no OR true | false | <rg-button ghost="yes" size="xsmall">ghost</rg-button></p>
+   <p><b>rounded</b> attribute: yes| no OR true | false | <rg-button rounded="yes" size="xsmall">rounded</rg-button>&nbsp;</p>
+   <p><b>full</b> width attribute: yes| no OR true | false</p>
+   <p><b>active</b> attribute: yes| no OR true | false | <rg-button style="brand" active="yes" size="xsmall">active</rg-button>&nbsp;
+   <rg-button style="brand" active="no" size="xsmall">non-active</rg-button></p>
+   <p><b>disbled</b> attribute: yes| no OR true | false | <rg-button style="info" disabled="yes" size="xsmall">disabled</rg-button>&nbsp;
+   <rg-button style="info" size="xsmall">enabled</rg-button></p>
+   <br />
+   <h4>Button Styles</h4>
+   <hr>
+   <div class="o-container o-container--medium">
+      <rg-button>&lt;no style&gt;</rg-button>&nbsp;
+      <rg-button style="info">_style_="**info**"</rg-button>&nbsp;
+      <rg-button style="warning">_style_="**warning**"</rg-button>&nbsp;
+      <rg-button style="success">_style_="**success**"</rg-button>&nbsp;
+      <rg-button style="brand">_style_="**brand**"</rg-button>&nbsp;
+      <rg-button style="brand" disabled="yes">_disabled_="**yes**"</rg-button>&nbsp;<br /><br />
+      <rg-button ghost="yes">&lt;no style&gt;</rg-button>&nbsp;
+      <rg-button ghost="yes" style="info">_style_="**info**"</rg-button>&nbsp;
+      <rg-button ghost="yes" style="warning">_style_="**warning**"</rg-button>&nbsp;
+      <rg-button ghost="yes" style="success">_style_="**success**"</rg-button>&nbsp;
+      <rg-button ghost="yes" style="brand">_style_="**brand**"</rg-button>&nbsp;
+      <rg-button ghost="yes" style="brand" disabled="yes">_disabled_="**yes**"</rg-button>&nbsp;<br /><br />
+      <rg-button ghost="yes" rounded="yes">&lt;no style&gt;</rg-button>&nbsp;
+      <rg-button ghost="yes" rounded="yes" style="info">_style_="**info**"</rg-button>&nbsp;
+      <rg-button ghost="yes" rounded="yes" style="warning">_style_="**warning**"</rg-button>&nbsp;
+      <rg-button ghost="yes" rounded="yes" style="success">_style_="**success**"</rg-button>&nbsp;
+      <rg-button ghost="yes" rounded="yes" style="brand">_style_="**brand**"</rg-button>&nbsp;
+      <rg-button ghost="yes" rounded="yes" style="brand" disabled="yes">_disabled_="**yes**"</rg-button>&nbsp;<br /><br />
+      <rg-button ghost="no" rounded="yes">&lt;no style&gt;</rg-button>&nbsp;
+      <rg-button ghost="no" rounded="yes" style="info">_style_="**info**"</rg-button>&nbsp;
+      <rg-button ghost="no" rounded="yes" style="warning">_style_="**warning**"</rg-button>&nbsp;
+      <rg-button ghost="no" rounded="yes" style="success">_style_="**success**"</rg-button>&nbsp;
+      <rg-button ghost="no" rounded="yes" style="brand">_style_="**brand**"</rg-button>&nbsp;
+      <rg-button ghost="no" rounded="yes" style="brand" disabled="yes">_disabled_="**yes**"</rg-button>&nbsp;<br /><br />
+    </div>
+    <br />
+    <h4>Button Sizes</h4>
+    <hr>
+    <div class="o-container o-container--medium">
+       <rg-button size="xsmall">_size_="**xsmall**"</rg-button>&nbsp;
+       <rg-button size="small">_size_="**small**"</rg-button>&nbsp;
+       <rg-button size="medium">_size_="**medium**"</rg-button>&nbsp;
+       <rg-button size="large">_size_="**large**"</rg-button>&nbsp;
+       <rg-button size="xlarge">_size_="**xlarge**"</rg-button>&nbsp;
+       <rg-button size="super">_size_="**super**"</rg-button>&nbsp;
+     </div>
+     <br />
+   <h4>Full Wdith Button</h4>
+   <hr>
+   <div class="o-container o-container--medium">
+      <rg-button ghost="no" full="yes" size="xsmall">_size_="**xsmall**"  &lt;no style&gt;  _full_="**yes**"</rg-button>&nbsp;
+      <rg-button style="info" rounded="yes" full="yes" size="small">_size_="**small**" _rounded_="**yes**"    _style_="**info**"   _full_="**yes**"</rg-button>&nbsp;
+      <rg-button style="warning" ghost="yes" full="yes" size="medium">_size_="**medium**" _ghost_="**yes**"   _style_="**warning**"   _full_="**yes**"</rg-button>&nbsp;
+      <rg-button style="success" ghost="no" full="yes" size="large">_size_="**large**" _style_="**success**"  _full_="**yes**"</rg-button>&nbsp;
+      <rg-button style="brand" ghost="yes" full="yes" size="xlarge">_size_="**xlarge**" _ghost_="**yes**"  _style_="**brand**"</rg-button>&nbsp;
+    </div>
+
+	<h3>
+		HTML
+	</h3>
+   You can either pass the text content for the button within the <code>rg-button</code> tags, or via the <code>text=""</code> attribute. The text within the tag is always used, if present.
+	<pre><code class="html">
+      &lt;rg-button style="&lt;empty&gt;|brand|info|success|warning|error" [active=true] [disabled=false] [rounded=true] [ghost=true] [optional: text="Button Text"]&gt;RG2 Rocks!&lt;/rg-button&gt;
+  </code></pre>
+
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+var tags = riot.mount("rg-button") ;
+</code></pre>
+
+</div>
+<script>
+    riot.mount("rg-button") ;
+</script>
