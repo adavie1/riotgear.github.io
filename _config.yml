@@ -58,6 +58,10 @@ navigation-components:
   url: /components/buttons/
   class-name: newcomp
 
+- text: Button Groups
+  url: /components/button-groups/
+  class-name: newcomp
+
 - text: Charts
   url: /components/charts/
 
