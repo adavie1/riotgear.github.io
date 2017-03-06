@@ -1,0 +1,148 @@
+---
+layout: page
+title: Button Groups
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6!</strong> The <a href="http://blazecss.com/components/buttons/">button groups</a> from Blaze 2 CSS!
+     </div>
+  
+	<h2>Use</h2>
+  <p class="newlabel">As with all <b>RiotGear2</b> tags you can use markdown in your button text!</p>
+	<hr>
+
+   <div class="o-grid">
+     <div id="grp-demo-1" class="o-grid__cell">
+       <rg-button-group ghost="yes" size="large" style="brand"></rg-button-group>
+     </div>
+     <div id="grp-demo-2" class="o-grid__cell">
+       <rg-button-group ghost="yes" rounded="yes" size="large" style="warning"></rg-button-group>
+     </div>
+     <div id="grp-demo-3" class="o-grid__cell">
+       <rg-button-group ghost="yes" rounded="yes" size="large" style="warning"></rg-button-group>
+     </div>
+ </div>
+
+  <h3>Button Group Attributes</h3>
+  These are global settings for all the buttons in the group. The only <b>exceptions</b> are <code>style</code>, <code>disabled</code> &amp; <code>active</code> which can be set individually in the <code>opts</code> settings.
+  <hr>
+  <p><b>style</b>: <rg-badge>&lt;empty&gt;</rg-badge> | <rg-badge style="info">info</rg-badge> | <rg-badge style="brand">brand</rg-badge> | <rg-badge style="warning">warning</rg-badge> | <rg-badge style="error">error</rg-badge> | <rg-badge style="success">success</rg-badge></p>
+  <p><b>size</b>: xsmall | small | medium | large | xlarge | super</p>
+  <p><b>ghost</b> attribute: yes| no OR true | false | <rg-button ghost="yes" size="xsmall">ghost</rg-button></p>
+  <p><b>rounded</b>: yes | no OR true | false | <rg-button rounded="yes" size="xsmall">rounded</rg-button>&nbsp;<rg-button rounded="no" size="xsmall">regular</rg-button></p>
+  <p><b>disbled</b> attribute: yes| no OR true | false | <rg-button style="info" disabled="yes" size="xsmall">disabled</rg-button>&nbsp;
+  <rg-button style="info" size="xsmall">enabled</rg-button></p>
+  <br />
+
+  <h3>Button Attributes</h3>
+  These are global settings for all the buttons in the group. The only <b>exception</b> is <code>style</code> &amp; <code>active</code> which can be set individually in the <code>opts</code> settings.
+  <hr>
+  <p><b>style</b>: <rg-badge>&lt;empty&gt;</rg-badge> | <rg-badge style="info">info</rg-badge> | <rg-badge style="brand">brand</rg-badge> | <rg-badge style="warning">warning</rg-badge> | <rg-badge style="error">error</rg-badge> | <rg-badge style="success">success</rg-badge></p>
+  <p><b>active</b> attribute: yes | no OR true | false | <rg-button style="brand" active="yes" size="xsmall">active</rg-button>&nbsp;
+  <rg-button style="brand" active="no" size="xsmall">non-active</rg-button></p>
+  <p><b>disbled</b> attribute: yes | no OR true | false | <rg-button style="info" disabled="yes" size="xsmall">disabled</rg-button>&nbsp;
+  <rg-button style="info" size="xsmall">enabled</rg-button></p>
+  <br />
+
+	<h3>
+		HTML
+	</h3>
+   You can either pass the text content for the button within the <code>rg-button</code> tags, or via the <code>text=""</code> attribute. The text within the tag is always used, if present.
+	<pre><code class="html">
+      &lt;rg-button-group style="&lt;empty&gt;|brand|info|success|warning|error" [rounded=true] [ghost=true]&gt;&lt;/rg-button-group&gt;
+  </code></pre>
+
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+    var tags = riot.mount ("div#grp-demo-1", "rg-button-group", {
+      group: {
+        style: "brand",
+        size: "small",
+        buttons: [
+             {text: "Button **1**", active: "yes"},
+             {text: "Button **2**"},
+             {text: "Button **3**"}
+           ]
+         }
+       }) ;
+
+    riot.mount ("div#grp-demo-2", "rg-button-group", {
+          group: {
+              style: "warning",
+              rounded: true,
+              ghost: true,
+              size: "small",
+              buttons: [
+                {text: "Group **1**"},
+                {text: "Group **2**", active: "yes"},
+                {text: "Group **3**"}
+              ]
+            }
+          }) ;
+
+    riot.mount ("div#grp-demo-3", "rg-button-group", {
+           group: {
+                style: "success",
+                rounded: true,
+                size: "small",
+                buttons: [
+                    {text: "Btn **1**"},
+                    {text: "Btn **2**"},
+                    {text: "Btn **3**", disabled: "yes"}
+                  ]
+                }
+            }) ;
+
+    tags[0].on ("button-clicked", function (e){console.log("button-clicked:", e);})
+
+</code></pre>
+
+</div>
+<script>
+    riot.mount ("rg-button, rg-badge") ;
+
+    var tags = riot.mount ("div#grp-demo-1", "rg-button-group", {
+      group: {
+        style: "brand",
+        size: "small",
+        buttons: [
+             {text: "Button **1**", active: "yes"},
+             {text: "Button **2**"},
+             {text: "Button **3**"}
+           ]
+         }
+       }) ;
+
+    riot.mount ("div#grp-demo-2", "rg-button-group", {
+          group: {
+              style: "warning",
+              rounded: true,
+              ghost: true,
+              size: "small",
+              buttons: [
+                {text: "Group **1**"},
+                {text: "Group **2**", active: "yes"},
+                {text: "Group **3**"}
+              ]
+            }
+          }) ;
+
+    riot.mount ("div#grp-demo-3", "rg-button-group", {
+           group: {
+                style: "success",
+                rounded: true,
+                size: "small",
+                buttons: [
+                    {text: "Btn **1**"},
+                    {text: "Btn **2**"},
+                    {text: "Btn **3**", disabled: "yes"}
+                  ]
+                }
+            }) ;
+
+    tags[0].on ("button-clicked", function (e){console.log("button-clicked:", e);})
+</script>
