@@ -16,10 +16,10 @@ title: Buttons
 	<p class="newlabel">As with all <b>RiotGear2</b> tags you can use markdown in your button text!</p>
 	<p><b>Note!</b> It is recommended strongly that <code>mount opts</code> only be used when there is a single instance on a page.</p>
    <hr>
-   <p><b>styles</b>: &lt;empty&gt;| info | brand | warning | error | success</p>
-   <p><b>sizes</b>: xsmall| small | medium | large | xlarge | super</p>
+   <p><b>style</b>: <rg-badge>&lt;empty&gt;</rg-badge> | <rg-badge style="info">info</rg-badge> | <rg-badge style="brand">brand</rg-badge> | <rg-badge style="warning">warning</rg-badge> | <rg-badge style="error">error</rg-badge> | <rg-badge style="success">success</rg-badge></p>
+   <p><b>size</b>: xsmall | small | medium | large | xlarge | super</p>
    <p><b>ghost</b> attribute: yes| no OR true | false | <rg-button ghost="yes" size="xsmall">ghost</rg-button></p>
-   <p><b>rounded</b> attribute: yes| no OR true | false | <rg-button rounded="yes" size="xsmall">rounded</rg-button>&nbsp;</p>
+   <p><b>rounded</b>: yes | no OR true | false | <rg-button rounded="yes" size="xsmall">rounded</rg-button>&nbsp;<rg-button rounded="no" size="xsmall">regular</rg-button></p>
    <p><b>full</b> width attribute: yes| no OR true | false</p>
    <p><b>active</b> attribute: yes| no OR true | false | <rg-button style="brand" active="yes" size="xsmall">active</rg-button>&nbsp;
    <rg-button style="brand" active="no" size="xsmall">non-active</rg-button></p>
@@ -89,7 +89,7 @@ title: Buttons
 	</h3>
 
 <pre><code class="javascript">
-var tags = riot.mount("rg-button") ;
+var tags = riot.mount("rg-button, rg-badge") ;
 </code></pre>
 
 </div>
