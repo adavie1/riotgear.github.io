@@ -17,17 +17,17 @@ title: Cards
         <div id="crd-demo-1" class="o-grid__cell">
 
            <rg-card shadow="highest">
-            My additional <b>content</b> here. <rg-badge style="success">This works!</rg-badge><br /><br />
+<!--            My additional <b>content</b> here. <rg-badge style="success">This works!</rg-badge><br /><br />   -->
           </rg-card>
 
         </div>
         <div id="crd-demo-2" class="o-grid__cell">
 
            <rg-card shadow="high">
-		   My additional <b>content</b> here. Other <b>RiotGear2</b> can also be used inside your card.
+<!--		   My additional <b>content</b> here. Other <b>RiotGear2</b> can also be used inside your card.
 		   <rg-badge style="brand">This works too!</rg-badge><br /><br />
             <rg-unsplash image="491" blur=true width="764"></rg-unsplash><br /><br />
-            <rg-button style="success" rounded=true full=true ghost=true text="Hello"></rg-button><br /><br />
+            <rg-button style="success" rounded=true full=true ghost=true text="Hello"></rg-button><br /><br />   -->
           </rg-card>
         </div>
     </div>
@@ -79,14 +79,6 @@ title: Cards
 
     <pre><code class="html">
       &lt;rg-card shadow="high | higher | highest" [header="TEXT"] [foooter="TEXT"]&gt;&lt;/rg-card&gt;
-      &lt;rg-card shadow="highest"&gt;
-        
-        &lt;rg-unsplash image="491" blur=true width="764"&gt;&lt;/rg-unsplash&gt;&lt;br /&gt;&lt;br /&gt;
-         My additional &lt;b&gt;content&lt;/b&gt; here. &lt;rg-badge style="success"&gt;This works!&lt;/rg-badge&gt;&lt;br /&gt;&lt;br /&gt;
-        &lt;rg-button style="success" rounded=true full=true ghost=true text="Hello"&gt;Again&lt;/rg-button&gt;&lt;br /&gt;&lt;br /&gt;
-        
-      &lt;/rg-card&gt;
-
   </code></pre>
 
     <h3>
@@ -95,8 +87,7 @@ title: Cards
 
     <pre><code class="javascript">
     var tags = riot.mount ("rg-card", {card: {
-                            text: "My **precious** text, it's _mine_! It's _mine_!&lt;br /&gt;"+
-                            "&lt;br /&gt;You can added content inside &lt;rg-card&gt; as shown below.",
+                            text: "My **precious** text, it's _mine_! It's _mine_!&lt;br /&gt;",
                             header: {image: "https://unsplash.it/1024/500?random",
                                     text: "**Master** of the _Universe_",
                                     subhead: "Job Vacancy",
@@ -124,8 +115,7 @@ title: Cards
 	riot.mount ("rg-button, rg-badge") ;
         var tags = riot.mount("div#crd-demo-1","rg-card", {
             card: {
-                text: "My **precious** text, it's _mine_! It's _mine_!<br />" +
-                    "<br />You can added content inside &lt;rg-card&gt; as shown below.",
+                text: "My **precious** text, it's _mine_! It's _mine_!",
                 header: {
                     image: "https://unsplash.it/1024/500?random",
                     text: "**Master** of the _Universe_",
@@ -156,8 +146,7 @@ title: Cards
 
         var tags = riot.mount("div#crd-demo-2","rg-card", {
             card: {
-                text: "A **second** card with other options enabled. Cool!<br />" +
-                    "<br />You can added content inside &lt;rg-card&gt; as shown below.",
+                text: "A **second** card with other options enabled. Cool!",
                 header: {
                     text: "**Elegant**, Stylish &amp; _Open Source_",
                     subhead: "Shameless Plug",
