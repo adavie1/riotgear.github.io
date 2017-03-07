@@ -12,13 +12,26 @@ title: Cards
     <h2>Use</h2>
     <p class="newlabel">As with all <b>RiotGear2</b> tags you can use markdown in your button text!</p>
     <hr>
-      <rg-card shadow="highest">
+    <div class="o-container o-container--medium">
+      <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
+        <div id="crd-demo-1" class="o-grid__cell">
 
-        <rg-unsplash image="491" blur=true width="764"></rg-unsplash><br /><br />
-         My additional <b>content</b> here. <rg-badge style="success">This works!</rg-badge><br /><br />
-        <rg-button style="success" rounded=true full=true ghost=true text="Hello">Again</rg-button><br /><br />
+           <rg-card shadow="highest">
+            My additional <b>content</b> here. <rg-badge style="success">This works!</rg-badge><br /><br />
+          </rg-card>
 
-      </rg-card>
+        </div>
+        <div id="crd-demo-2" class="o-grid__cell">
+
+           <rg-card shadow="high">
+		   My additional <b>content</b> here. Other <b>RiotGear2</b> can also be used inside your card.
+		   <rg-badge style="brand">This works too!</rg-badge><br /><br />
+            <rg-unsplash image="491" blur=true width="764"></rg-unsplash><br /><br />
+            <rg-button style="success" rounded=true full=true ghost=true text="Hello"></rg-button><br /><br />
+          </rg-card>
+        </div>
+    </div>
+ </div>
 
     <hr>
 
@@ -108,7 +121,8 @@ title: Cards
 
 
     <script>
-        var tags = riot.mount("rg-card, rg-button, rg-badge", {
+	riot.mount ("rg-button, rg-badge") ;
+        var tags = riot.mount("div#crd-demo-1","rg-card", {
             card: {
                 text: "My **precious** text, it's _mine_! It's _mine_!<br />" +
                     "<br />You can added content inside &lt;rg-card&gt; as shown below.",
@@ -134,6 +148,38 @@ title: Cards
                         {
                             text: "No",
                             style: "error"
+                        }
+                    ]
+                }
+            }
+        });
+
+        var tags = riot.mount("div#crd-demo-2","rg-card", {
+            card: {
+                text: "A **second** card with other options enabled. Cool!<br />" +
+                    "<br />You can added content inside &lt;rg-card&gt; as shown below.",
+                header: {
+                    text: "**Elegant**, Stylish &amp; _Open Source_",
+                    subhead: "Shameless Plug",
+                    divider: true,
+                    style: "brand"
+                },
+                footer: {
+                    text: "&copy; MIT License 2017",
+//                    divider: true,
+//                    style: "warning",
+                    block: true,
+                    items: [{
+                            text: "Love It!",
+			    style: "info"
+                        },
+                        {
+                            text: "Use It!",
+                            style: "info"
+                        },
+                        {
+                            text: "Grok it!",
+                            style: "brand"
                         }
                     ]
                 }
