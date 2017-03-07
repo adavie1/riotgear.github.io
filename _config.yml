@@ -62,10 +62,6 @@ navigation-components:
   url: /components/button-groups/
   class-name: newcomp
 
-- text: Cards
-  url: /components/cards/
-  class-name: newcomp
-
 - text: Charts
   url: /components/charts/
 
