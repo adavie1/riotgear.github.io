@@ -1,0 +1,112 @@
+--
+layout: page
+title: Cards
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6!</strong> The <a href="http://blazecss.com/components/cards/">cards</a> to display card content, with headers and optional footers.
+     </div>
+  
+	<h2>Use</h2>
+  <p class="newlabel">As with all <b>RiotGear2</b> tags you can use markdown in your button text!</p>
+	<hr>
+   <div class="o-container o-container--medium">
+   <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
+     <div id="crd-demo-1" class="o-grid__cell">
+       &nbsp;<rg-card></rg-card>&nbsp;
+     </div>
+     <div id="crd-demo-2" class="o-grid__cell">
+       &nbsp;<rg-card></rg-card>&nbsp;
+     </div>
+     <div id="crd-demo-3" class="o-grid__cell">
+       &nbsp;<rg-card></rg-card>&nbsp;
+     </div>
+    </div>
+ </div>
+
+  <h3>Card Attributes</h3>
+  These are global settings for <code>rg-card</code> tags.
+  <hr>
+  <p><b>style</b>: <rg-badge>&lt;empty&gt;</rg-badge> | <rg-badge style="info">info</rg-badge> | <rg-badge style="brand">brand</rg-badge> | <rg-badge style="warning">warning</rg-badge> | <rg-badge style="error">error</rg-badge> | <rg-badge style="success">success</rg-badge></p>
+  <p><b>shadow</b>: high | higher | highest</p>
+  <p><b>header</b> attribute: [TEXT]</p>
+  <p><b>subhead</b> attribute: [TEXT]</p>
+  <p><b>footer</b>: [TEXT]</p>
+  <br />
+
+  <h3>Footer Button Attributes (<i>optional,/i>)</h3>
+  These are settings for each button in the footer section.
+  <hr>
+  <p><b>style</b>: <rg-badge>&lt;empty&gt;</rg-badge> | <rg-badge style="info">info</rg-badge> | <rg-badge style="brand">brand</rg-badge> | <rg-badge style="warning">warning</rg-badge> | <rg-badge style="error">error</rg-badge> | <rg-badge style="success">success</rg-badge></p>
+  <p><b>active</b> attribute: yes | no OR true | false | <rg-button style="brand" active="yes" size="xsmall">active</rg-button>&nbsp;
+  <rg-button style="brand" active="no" size="xsmall">non-active</rg-button></p>
+  <p><b>disbled</b> attribute: yes | no OR true | false | <rg-button style="info" disabled="yes" size="xsmall">disabled</rg-button>&nbsp;
+  <rg-button style="info" size="xsmall">enabled</rg-button></p>
+  <br />
+
+	<h3>
+		HTML
+	</h3>
+   The settings for header text, shadows & footer text can be set on a tag by tag basis.
+	<pre><code class="html">
+      &lt;rg-card shadow="high | higher | highest" [header="TEXT"] [foooter="TEXT"]&gt;&lt;/rg-card&gt;
+  </code></pre>
+
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+    var tags = riot.mount ("rg-card", {card: {
+                            text: "My **precious** text, it's _mine_! It's _mine_!&lt;br /&gt;"+
+                            "&lt;br /&gt;You can added content inside &lt;rg-card&gt; as shown below.",
+                            header: {image: "https://unsplash.it/1024/500?random",
+                                    text: "**Master** of the _Universe_",
+                                    subhead: "Job Vacancy",
+                                    divider: true,
+//                                    style: "brand"
+                                    },
+                            footer: {
+//                                    text: "_Footer_ Text",
+//                                    divider: true,
+//                                    style: "warning",
+//                                    block: true,
+                                    items: [
+                                      {text: "Yes"},
+                                      {text: "Maybe", style: "warning"},
+                                      {text: "No", style: "error"}
+                                    ]}
+    }}) ;
+
+    tags[0].on("button-clicked", function (e) {console.log("button-clicked:", e)}) ;
+    </script>
+
+</code></pre>
+
+</div>
+<script>
+    var tags = riot.mount ("rg-card", {card: {
+                            text: "My **precious** text, it's _mine_! It's _mine_!<br />"+
+                            "<br />You can added content inside &lt;rg-card&gt; as shown below.",
+                            header: {image: "https://unsplash.it/1024/500?random",
+                                    text: "**Master** of the _Universe_",
+                                    subhead: "Job Vacancy",
+                                    divider: true,
+//                                    style: "brand"
+                                    },
+                            footer: {
+//                                    text: "_Footer_ Text",
+//                                    divider: true,
+//                                    style: "warning",
+//                                    block: true,
+                                    items: [
+                                      {text: "Yes"},
+                                      {text: "Maybe", style: "warning"},
+                                      {text: "No", style: "error"}
+                                    ]}
+    }}) ;
+
+    tags[0].on("button-clicked", function (e) {console.log("button-clicked:", e)}) ;
+    </script>
+</script>
