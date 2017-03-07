@@ -16,14 +16,14 @@ title: Cards
       <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
         <div id="crd-demo-1" class="o-grid__cell">
 
-           <rg-card shadow="highest">
+           <rg-card>
 <!--            My additional <b>content</b> here. <rg-badge style="success">This works!</rg-badge><br /><br />   -->
           </rg-card>
 
         </div>
         <div id="crd-demo-2" class="o-grid__cell">
 
-           <rg-card shadow="high">
+           <rg-card>
 <!--		   My additional <b>content</b> here. Other <b>RiotGear2</b> can also be used inside your card.
 		   <rg-badge style="brand">This works too!</rg-badge><br /><br />
             <rg-unsplash image="491" blur=true width="764"></rg-unsplash><br /><br />
@@ -88,6 +88,7 @@ title: Cards
     <pre><code class="javascript">
     var tags = riot.mount ("rg-card", {card: {
                             text: "My **precious** text, it's _mine_! It's _mine_!&lt;br /&gt;",
+			    shadow: "high",
                             header: {image: "https://unsplash.it/1024/500?random",
                                     text: "**Master** of the _Universe_",
                                     subhead: "Job Vacancy",
@@ -113,9 +114,11 @@ title: Cards
 
     <script>
 	riot.mount ("rg-button, rg-badge") ;
-        var tags = riot.mount("div#crd-demo-1","rg-card", {
+
+	    var tags = riot.mount("div#crd-demo-1","rg-card", {
             card: {
                 text: "My **precious** text, it's _mine_! It's _mine_!",
+		shadow: "high",
                 header: {
                     image: "https://unsplash.it/1024/500?random",
                     text: "**Master** of the _Universe_",
@@ -147,11 +150,12 @@ title: Cards
         var tags = riot.mount("div#crd-demo-2","rg-card", {
             card: {
                 text: "A **second** card with other options enabled. Cool!",
+		shadow: "highest",
                 header: {
                     text: "**Elegant**, Stylish &amp; _Open Source_",
                     subhead: "Shameless Plug",
                     divider: true,
-                    style: "brand"
+                    style: "success"
                 },
                 footer: {
                     text: "&copy; MIT License 2017",
