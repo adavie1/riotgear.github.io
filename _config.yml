@@ -63,7 +63,7 @@ navigation-components:
   class-name: newcomp
   
   - text: Cards
-    url: /components/cards/
+    url: /components/card/
     class-name: newcomp
 
 - text: Charts
