@@ -2,6 +2,7 @@
 layout: page
 title: Cards
 ---
+
 <div class="demo-container">
   
        <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
@@ -23,7 +24,7 @@ title: Cards
        &nbsp;<rg-card></rg-card>&nbsp;
      </div>
     </div>
- </div>
+   </div>
 
   <h3>Card Attributes</h3>
   These are global settings for <code>rg-card</code> tags.
@@ -48,7 +49,7 @@ title: Cards
 	<h3>
 		HTML
 	</h3>
-   The settings for header text, shadows & footer text can be set on a tag by tag basis.
+   The settings for header text, shadows &amp; footer text can be set on a tag by tag basis.
 	<pre><code class="html">
       &lt;rg-card shadow="high | higher | highest" [header="TEXT"] [foooter="TEXT"]&gt;&lt;/rg-card&gt;
   </code></pre>
@@ -80,11 +81,10 @@ title: Cards
     }}) ;
 
     tags[0].on("button-clicked", function (e) {console.log("button-clicked:", e)}) ;
-    </script>
 
 </code></pre>
 
-</div>
+
 <script>
     var tags = riot.mount ("rg-card", {card: {
                             text: "My **precious** text, it's _mine_! It's _mine_!<br />"+
@@ -108,5 +108,5 @@ title: Cards
     }}) ;
 
     tags[0].on("button-clicked", function (e) {console.log("button-clicked:", e)}) ;
-    </script>
 </script>
+</div>
