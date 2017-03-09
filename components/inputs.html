@@ -10,7 +10,7 @@ title: Inputs
     </div>
 
     <h2>Use</h2>
-    <p>HTML5 input support, be warned though, many browsers are very naughty in fully supporting all these types.</p>
+    <p>HTML5 input support, be warned though, <a herf="https://www.wufoo.com/html5/" target="_blank">many browsers<a/> are very naughty in fully supporting all these types.</p>
     <ul>
 	    <li><a href="http://caniuse.com/#feat=input-number" target="_blank">Number Types</a>
 	    <li><a href="http://caniuse.com/#feat=input-datetime" target="_blank">Date Time Types</a>
@@ -19,29 +19,72 @@ title: Inputs
     </ul>
     <hr>
     <div class="o-container o-container--medium">
-      <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
+      <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full o-grid--wrap">
+
        <div class="o-grid__cell">
+       <h5 class="c-heading">Regular</h5>
+	<hr>
+	<div class="o-grid__cell"></div>
+        </div>
+
+       <div class="o-grid__cell">
+       <h5 class="c-heading">Required</h5>
+	<hr>
+		<div class="o-grid__cell">
+		<label class="c-field c-field--choice">
+  		<input type="checkbox"> Required
+		</label>
+	      </div>
+        </div>
+
+       <div class="o-grid__cell">
+       <h5 class="c-heading">Disabled</h5>
+	<hr>
+		<div class="o-grid__cell">
+		<label class="c-field c-field--choice">
+  		<input type="checkbox"> Disabled
+		</label>
+	      </div>
+        </div>
+
+       <div class="o-grid__cell">
+       <h5 class="c-heading">Styled</h5>
+	<hr>
+	<div class="o-grid__cell">
+		<select class="c-field">
+		  <option>&lt;default&gt;</option>
+		  <option>brand</option>
+		  <option>info</option>
+		  <option>warning</option>
+		  <option>error</option>
+		  <option>success</option>
+		</select>
+	</div>
+        </div>
+
+       <div class="o-grid__cell o-grid__cell--width-25">
 
          <rg-input style="error" placeholder="Enter something here"></rg-input>&nbsp;
 
        </div>
-       <div class="o-grid__cell">
+       <div class="o-grid__cell  o-grid__cell--width-25">
 
          <rg-input type="posnum"  placeholder="years active" required=true value="22"></rg-input>&nbsp;
 
        </div>
-       <div class="o-grid__cell">
+       <div class="o-grid__cell  o-grid__cell--width-25">
 
          <rg-input type="number" min=5 max=10 value=2 step=2></rg-input>&nbsp;
 
        </div>
-       <div class="o-grid__cell">
+       <div class="o-grid__cell o-grid__cell--width-25">
 
          <rg-input type="range" min=0 step=5 max="15"></rg-input>&nbsp;
 
-       </div>
+       </div>	      
     </div>
- </div>
+
+ </div> <!-- container end -->
 
     <hr>
 
