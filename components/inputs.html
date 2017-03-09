@@ -8,7 +8,7 @@ title: Inputs
     <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
         <strong>New in v3.6!</strong> The Blaze <a href="http://blazecss.com/components/inputs/">inputs</a> can be used to provide styled HTML5 inputs.
     </div>
-
+    <rg-alert style="warning">**Page Under Development!** We're working on making the page more functional to show all the input types. So still _work in progress_. Thanks for your patience.</rg-alert>
     <h2>Use</h2>
     <p>HTML5 input support, be warned though, <a herf="https://www.wufoo.com/html5/" target="_blank">many browsers<a/> are very naughty in fully supporting all these types.</p>
     <ul>
@@ -18,8 +18,8 @@ title: Inputs
 	    <li><a href="http://caniuse.com/#feat=input-search" target="_blank">Search Input Type</a>
     </ul>
     <hr>
-    <div class="o-container o-container--medium">
-      <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
+    <div class="o-container o-container--large">
+      <div class="o-grid o-grid--wrap">
 
        <div class="o-grid__cell o-grid__cell--width-20">
        <h5 class="c-heading">HTML5 Type</h5>
@@ -52,24 +52,16 @@ title: Inputs
 	 </div>
 
        <div class="o-grid__cell o-grid__cell--width-25">
-
          <rg-input style="error" placeholder="Enter something here"></rg-input>&nbsp;
-
        </div>
        <div class="o-grid__cell  o-grid__cell--width-25">
-
          <rg-input type="posnum"  placeholder="years active" required=true value="22"></rg-input>&nbsp;
-
        </div>
        <div class="o-grid__cell  o-grid__cell--width-25">
-
          <rg-input type="number" min=5 max=10 value=2 step=2></rg-input>&nbsp;
-
        </div>
        <div class="o-grid__cell o-grid__cell--width-25">
-
          <rg-input type="range" min=0 step=5 max="15"></rg-input>&nbsp;
-
        </div>	      
     </div>
 
@@ -129,6 +121,6 @@ title: Inputs
 </code></pre>
 
     <script>
-	riot.mount ("rg-input, rg-badge") ;
+	riot.mount ("rg-input, rg-badge, rg-alert") ;
    </script>
 </div>
