@@ -7,11 +7,10 @@ title: Inputs
 
     <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
         <strong>New in v3.6!</strong> The Blaze <a href="http://blazecss.com/components/inputs/">inputs</a> can be used to provide styled HTML5 inputs.
-    </div>ge
-title: Car
+    </div>
 
     <h2>Use</h2>
-    <p class="newlabel">As with all <b>RiotGear2</b> tags you can use markdown in your button text!</p>
+    <p>HTML5 input support, be warned though, many browsers are very naughty in fully supporting all these types.</p>
     <hr>
     <div class="o-container o-container--medium">
       <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
@@ -68,12 +67,12 @@ title: Car
   <p>This tag supports the standard HTML5 browser types, however there is <b>lots</b> support differences across all the browsers.</p>
 
  <pre><code class="html">
-  &lt;rg-input&gt;&lt;/rg-input&gt;
-         &lt;rg-input style="error" placeholder="Enter something here"&gt;&lt;/rg-input&gt;<br />
-         &lt;rg-input type="posnum"  placeholder="years active" required=true value="22"&gt;&lt;/rg-input&gt;<br />
-         &lt;rg-input type="number" min=5 max=10 value=2 step=2&gt;&lt;/rg-input&gt;<br />
-         &lt;rg-input type="range" min=0 step=5 max="15"&gt;&lt;/rg-input&gt;<br />
-
+  	&lt;rg-input&gt;&lt;/rg-input&gt;
+        &lt;rg-input style="error" placeholder="Enter something here"&gt;&lt;/rg-input&gt;<br />
+        &lt;rg-input type="posnum"  placeholder="years active" required=true value="22"&gt;&lt;/rg-input&gt;<br />
+        &lt;rg-input type="number" min=5 max=10 value=2 step=2&gt;&lt;/rg-input&gt;<br />
+        &lt;rg-input type="range" min=0 step=5 max="15"&gt;&lt;/rg-input&gt;<br />
+</code></pre>
 
     <pre><code class="javascript">
     riot.mount ("rg-input", {input: {
@@ -91,8 +90,7 @@ title: Car
 
 </code></pre>
 
-
     <script>
 	riot.mount ("rg-input, rg-badge") ;
-
+   </script>
 </div>
