@@ -1,0 +1,98 @@
+---
+layout: page
+title: Inputs
+---
+
+<div class="demo-container">
+
+    <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+        <strong>New in v3.6!</strong> The Blaze <a href="http://blazecss.com/components/inputs/">inputs</a> can be used to provide styled HTML5 inputs.
+    </div>ge
+title: Car
+
+    <h2>Use</h2>
+    <p class="newlabel">As with all <b>RiotGear2</b> tags you can use markdown in your button text!</p>
+    <hr>
+    <div class="o-container o-container--medium">
+      <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
+       <div class="o-grid__cell">
+
+         <rg-input style="error" placeholder="Enter something here"></rg-input>&nbsp;
+
+       </div>
+       <div class="o-grid__cell">
+
+         <rg-input type="posnum"  placeholder="years active" required=true value="22"></rg-input>&nbsp;
+
+       </div>
+       <div class="o-grid__cell">
+
+         <rg-input type="number" min=5 max=10 value=2 step=2></rg-input>&nbsp;
+
+       </div>
+       <div class="o-grid__cell">
+
+         <rg-input type="range" min=0 step=5 max="15"></rg-input>&nbsp;
+
+       </div>
+    </div>
+ </div>
+
+    <hr>
+
+    <h3>Input Attributes</h3>
+	<p><b>Inline settings: </b> value | type | min | max | step | size | placeholder | disabled | required </p>
+    <hr>
+    <p><b>type</b>: [HTML5 TYPE NAME] <i><b>see below*</b></i></p>
+    <p><b>style</b>:
+	<rg-badge>&lt;empty&gt;</rg-badge> |
+        <rg-badge style="info">info</rg-badge> |
+        <rg-badge style="brand">brand</rg-badge> |
+        <rg-badge style="warning">warning</rg-badge> |
+        <rg-badge style="error">error</rg-badge> |
+        <rg-badge style="success">success</rg-badge>
+</p>
+    <p><b>value</b>: [TEXT] appropriate value for HTML5 input type</p>
+	 <p><b>required</b>: yes | no OR true | false</p>
+ 	 <p><b>disabled</b>: yes | no OR true | false</p>
+   <hr>
+   <h4>For <i>number</i> and <i>range</i> types only</h4>
+	 <p><b>min</b>: [INTEGER]</p>
+	 <p><b>max</b>: [INTEGER]</p>
+	 <p><b>step</b>: [INTEGER]</p>
+    <br />
+    <b>Note:</b> If a value is below MIN it will adjusted to MIN. If it is above MAX, it will be set to MAX.
+	 <h3>
+		HTML
+	</h3>
+  <p>This tag supports the standard HTML5 browser types, however there is <b>lots</b> support differences across all the browsers.</p>
+
+ <pre><code class="html">
+  &lt;rg-input&gt;&lt;/rg-input&gt;
+         &lt;rg-input style="error" placeholder="Enter something here"&gt;&lt;/rg-input&gt;<br />
+         &lt;rg-input type="posnum"  placeholder="years active" required=true value="22"&gt;&lt;/rg-input&gt;<br />
+         &lt;rg-input type="number" min=5 max=10 value=2 step=2&gt;&lt;/rg-input&gt;<br />
+         &lt;rg-input type="range" min=0 step=5 max="15"&gt;&lt;/rg-input&gt;<br />
+
+
+    <pre><code class="javascript">
+    riot.mount ("rg-input", {input: {
+                            style: [STYLE TEXT],
+                            type: [HTML5 INPUT TYPE],
+                            placeholder: [TEXT],
+                            value: [INIIT VALUE],
+                            min: [NUMBER],   // only applies to types:NUMBER and RANGE.
+                            max: [NUMBER],   // only applies to types:NUMBER and RANGE.
+                            step: [NUMBER],  // only applies to types:NUMBER and RANGE.
+                            size: [NUMBER],
+                            required: [BOOLEAN],
+                            disabled: [BOOLEAN],
+    }) ;
+
+</code></pre>
+
+
+    <script>
+	riot.mount ("rg-input, rg-badge") ;
+
+</div>
