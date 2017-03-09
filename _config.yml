@@ -98,6 +98,10 @@ navigation-components:
 - text: Include
   url: /components/include/
 
+- text: Inputs
+  url: /components/inputs/
+  class-name: newcomp
+
 - text: Map
   url: /components/map/
 
