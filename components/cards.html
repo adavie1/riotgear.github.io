@@ -17,7 +17,7 @@ title: Cards
         <div id="crd-demo-1" class="o-grid__cell">
 
            <rg-card>
-<!--            My additional <b>content</b> here. <rg-badge style="success">This works!</rg-badge><br /><br />   -->
+		   This content is taken from <i>within</i> the <code>&lt;rg-card&gt;</code> tag. <rg-badge style="success">This works!</rg-badge><br /><br />
           </rg-card>
 
         </div>
@@ -91,7 +91,6 @@ title: Cards
     <pre><code class="javascript">
     var tags = riot.mount ("rg-card", {card: {
                             text: "My **precious** text, it's _mine_! It's _mine_!&lt;br /&gt;",
-			    shadow: "high",
                             header: {image: "https://unsplash.it/1024/500?random",
                                     text: "**Master** of the _Universe_",
                                     subhead: "Job Vacancy",
