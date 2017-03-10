@@ -7,68 +7,316 @@ title: Inputs
 
     <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
         <strong>New in v3.6!</strong> The Blaze <a href="http://blazecss.com/components/inputs/">inputs</a> can be used to provide styled HTML5 inputs.
-    </div>
-    <rg-alert style="warning">**Page Under Development!** We're working on making the page more functional to show all the input types. So still _work in progress_. Thanks for your patience.</rg-alert>
-    <h2>Use</h2>
-    <p>HTML5 input support, be warned though, <a herf="https://www.wufoo.com/html5/" target="_blank">many browsers</a> are very naughty in fully supporting all these types.</p>
-    <ul>
-	    <li><a href="http://caniuse.com/#feat=input-number" target="_blank">Number Types</a>
-	    <li><a href="http://caniuse.com/#feat=input-datetime" target="_blank">Date Time Types</a>
-	    <li><a href="http://caniuse.com/#feat=input-email-tel-url" target="_blank">e-Mail and Tel Types</a>
-	    <li><a href="http://caniuse.com/#feat=input-search" target="_blank">Search Input Type</a>
-    </ul>
-    <hr>
-    <div class="o-container o-container--large">
-      <div class="o-grid">
+    </div><br />
+   <h2>Use</h2>
+   <p>HTML5 input support, be warned though, <a href="https://www.wufoo.com/html5/" target="_blank">many browsers</a>
+      are very naughty in fully supporting all these types.</p>
+   <p>You will find very mixed support across all the browsers, so if the demo below doesn't work as you expect, please check your <b>browser support</b> <i>first</i> before reporting a bug here.</p>
+   <ul>
+     <li><a href="http://caniuse.com/#feat=input-number" target="_blank">Number Types</a>
+     <li><a href="http://caniuse.com/#feat=input-datetime" target="_blank">Date Time Types</a>
+     <li><a href="http://caniuse.com/#feat=input-email-tel-url" target="_blank">e-Mail and Tel Types</a>
+     <li><a href="http://caniuse.com/#feat=input-search" target="_blank">Search Input Type</a>
+   </ul>
+   <hr>
+
+     <div class="o-grid o-grid--wrap o-grid--large-fit">
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <label class="c-text--loud">HTML5 Type</label>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <label class="c-text--loud">Regular</label>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <label class="c-field c-field--choice"><input type="checkbox"> <span class="c-text--loud">Required</span></label>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <label class="c-field c-field--choice"><input type="checkbox"> <span class="c-text--loud">Disabled</span></label>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--loud">Styled</span> <select class="c-field">
+        <option>&lt;default&gt;</option>
+        <option>brand</option>
+        <option>info</option>
+        <option>warning</option>
+        <option>error</option>
+        <option>success</option>
+       </select>
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-100">
+         <h4 class="c-heading">Text Types</h4>
+         <hr>
+       </div>
 
        <div class="o-grid__cell o-grid__cell--width-20">
-       <p class="c-text--loud">HTML5 Type</p>
-        </div>
-
-       <div class="o-grid__cell  o-grid__cell--width-20">
-       <p class="c-text-loud">Regular</p>
-
-       <div class="o-grid__cell  o-grid__cell--width-20">
-       <p class="c-text--loud"><label class="c-field c-field--choice"><input type="checkbox"> Required</label></p>
-        </div>
-
-       <div class="o-grid__cell  o-grid__cell--width-20">
-       <p class="c-text--loud"><label class="c-field c-field--choice"><input type="checkbox"> Disabled</label></p>
-        </div>
-
-       <div class="o-grid__cell  o-grid__cell--width-20">
-       <p class="c-text--loud">Styled <select class="c-field">
-		  <option>&lt;default&gt;</option>
-		  <option>brand</option>
-		  <option>info</option>
-		  <option>warning</option>
-		  <option>error</option>
-		  <option>success</option>
-		</select></p>
-        </div>
-
-	 <div class="o-grid__cell o-grid__cell--width-100">
-	 <h3>Text Types</h3>
-	<hr>
-	 </div>
-
-       <div class="o-grid__cell o-grid__cell--width-25">
-         <rg-input style="error" placeholder="Enter something here"></rg-input>&nbsp;
+         <span class="c-text--quiet">Text</span>
        </div>
-       <div class="o-grid__cell  o-grid__cell--width-25">
-         <rg-input type="posnum"  placeholder="years active" required=true value="22"></rg-input>&nbsp;
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input placeholder="Enter stuff"></rg-input>
        </div>
-       <div class="o-grid__cell  o-grid__cell--width-25">
-         <rg-input type="number" min=5 max=10 value=2 step=2></rg-input>&nbsp;
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input placeholder="Name" required=true></rg-input>
        </div>
-       <div class="o-grid__cell o-grid__cell--width-25">
-         <rg-input type="range" min=0 step=5 max="15"></rg-input>&nbsp;
-       </div>	      
-    </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input style="error"></rg-input><br />
+       </div>
 
- </div> <!-- container end -->
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">Text Area</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-textarea placeholder="Enter stuff"></rg-textarea>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-textarea placeholder="Name" required=true></rg-textarea>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-textarea disabled=true></rg-textarea>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-textarea style="success"></rg-textarea><br />
+       </div>
 
-    <hr>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">E-mail</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="email" placeholder="me@you.com"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="email" placeholder="me@you.com" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="email" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="email" style="brand"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">Tel</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="tel" placeholder="Home No."></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="tel" placeholder="Work No." required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="tel" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="tel" style="success"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">Search</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="search" placeholder="Search..."></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="search" placeholder="Search..." required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="search" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="search" style="warning"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">URL</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="url" placeholder="Domain"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="url" placeholder="Transfer" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="url" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="url" style="warning"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">Password</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="password" placeholder="Password"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="password" placeholder="Password" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="password" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="password" placeholder="Password" style="warning"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-100">
+         <h4 class="c-heading">Number Types</h4>
+         <hr>
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">Number</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number" placeholder="Enter #"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number" placeholder="Number" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number"  style="info"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">PosNum</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="posnum" placeholder="Pos. #"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="posnum" placeholder="Number" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="posnum" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="posnum" style="brand"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">Number [5..10]</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number" placeholder="Enter #" min=5 max=10></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number" placeholder="Name"  min=5 max=10 required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="number" disabled=true  min=5 max=10></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="number" style="success"  min=5 max=10></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">Range [0..20] / 5</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="range" placeholder="Enter #" step=5 min=0 max=20></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="range" placeholder="Name"  step=5 min=0 max=20 required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="range" disabled=true  step=5 min=0 max=20></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="range" style="success"  step=5 min=0 max=20></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-100">
+         <h4 class="c-heading">Date/Time Types</h4>
+         <hr>
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet">Date</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="date" placeholder="Created"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="date" placeholder="Born" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="date" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="date"  style="info"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">Date/Time</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="datetime" placeholder="When"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="datetime" placeholder="Delivery" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="datetime" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="datetime" style="info"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">Time</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="time" placeholder="Time" min=5 max=10></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="time" placeholder="Time" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="time" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="time" style="success"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">Week</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="week" placeholder="Enter #"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="week" placeholder="Name" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="week" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="week" style="success"></rg-input><br />
+       </div>
+
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <span class="c-text--quiet newlabel">Month</span>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="month" placeholder="Delivery"></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="month" placeholder="Recived" required=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input type="month" disabled=true></rg-input>
+       </div>
+       <div class="o-grid__cell o-grid__cell--width-20">
+         <rg-input  type="month" style="warning"></rg-input><br />
+       </div>
+
+     </div>
+
 
     <h3>Input Attributes</h3>
 	<p><b>Inline settings: </b> value | type | min | max | step | size | placeholder | disabled | required </p>
@@ -120,8 +368,8 @@ title: Inputs
     }) ;
 
 </code></pre>
-
-    <script>
-	riot.mount ("rg-input, rg-badge, rg-alert") ;
-   </script>
 </div>
+
+<script>
+   riot.mount ("rg-input, rg-textarea, rg-badge") ;
+</script>
