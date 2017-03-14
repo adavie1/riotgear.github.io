@@ -102,6 +102,10 @@ navigation-components:
   url: /components/inputs/
   class-name: newcomp
 
+- text: Lists
+  url: /components/lists/
+  class-name: newcomp
+
 - text: Map
   url: /components/map/
 
