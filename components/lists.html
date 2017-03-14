@@ -1,0 +1,53 @@
+---
+layout: page
+title: Lists
+---
+<div class="demo-container">
+  
+       <div style="border-radius: 25px; border: 2px solid seagreen;padding: 20px;">
+         <strong>New in v3.6!</strong> The <a href="http://blazecss.com/components/lists/">lists</a> feature from Blaze CSS!
+     </div>
+
+  
+	<h2>Use</h2>
+	<hr>
+   <rg-list ordered=true>
+   </rg-list>
+   <br />
+   <br />
+   <rg-list ordered=false>
+   </rg-list>
+	<hr>
+           <ul>
+		   <li class="newlabel">The list supports markdown text</li>
+		   <li>The list only decends <b>four generations</b>, anything beyond that is currently ignored.</li>
+	   </ul>
+	<h3>
+		HTML
+	</h3>
+  <p>Inline: ordered: boolean | inline: boolean | unstyled: boolean
+	<pre><code class="html">&lt;rg-list ordered=[true|false]>&lt;/rg-list></code></pre>
+
+	<h3>
+		JavaScript
+	</h3>
+
+<pre><code class="javascript">
+    riot.mount ("rg-list", {list : {items: [
+      {text: "Testy **Listy**", items: [{text: "Ducky **Listy**", items: [{text: "Plucky _unstyled_", unstyled: true, items:[{text: "Trucky **Listy**"}]}]}]},
+      {text: "Mucky"},
+      {text: "Puppy"}
+    ]}
+  }) ;
+
+</code></pre>
+
+</div>
+<script>
+    riot.mount ("rg-list", {list : {items: [
+      {text: "Testy **Listy**", items: [{text: "Ducky **Listy**", items: [{text: "Plucky _unstyled_", unstyled: true, items:[{text: "Trucky **Listy**"}]}]}]},
+      {text: "Mucky"},
+      {text: "Puppy"}
+    ]}
+  }) ;
+</script>
