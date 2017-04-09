@@ -1,5 +1,5 @@
 <h3>Getting Started</h3>
-<ul>
+<ul style="list-style-type: none;">
 	{% for link in site.navigation-getting-started %}
 	{% assign active = nil %}
 	{% if page.url == link.url %}
@@ -9,7 +9,7 @@
 	{% endfor %}
 </ul>
 <h3>Community</h3>
-<ul>
+<ul style="list-style-type: none;">
 	{% for link in site.navigation-community %}
 	{% assign active = nil %}
 	{% if page.url == link.url %}
@@ -19,7 +19,7 @@
 	{% endfor %}
 </ul>
 <h3>Components</h3>
-<ul>
+<ul style="list-style-type: none;">
 	{% for link in site.navigation-components %}
 	{% assign active = nil %}
 	{% if page.url == link.url %}
@@ -31,7 +31,7 @@
 
 <h3 class="newlabel">Plugins</h3>
 <i>Comming Soon!</i>
-<ul>
+<ul style="list-style-type: none;">
 	{% for link in site.navigation-plugins %}
 	{% assign active = nil %}
 	{% if page.url == link.url %}
