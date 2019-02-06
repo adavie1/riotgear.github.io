@@ -1,7 +1,9 @@
 # RiotGear2
 
-## This is a FORK of the Orginal RiotGear
-If you're looking for the orginal repo, which is Blaze CSS v1.0 compatible, head over to <a href="http://riotgear.js.org">here</a>.
+## Please NOTE: Blaze CSS is no more- Long Live Blaze UI.
+The components here are for the earlier version of Blaze CSS. 
+The most compatible CDN is: [here](https://cdnjs.cloudflare.com/ajax/libs/blaze/3.6.3/blaze.min.css)
+The maintainer of this repo is very focused on VueJS projects, but the intent is to come back to RiotJS to update fully the project not only to Blaze UI, but to the newest version of Riot as well. Thanks for your patience and understanding.
 
 <img src="https://riotgear2.github.io/images/logobig.png" width="150px">
 
